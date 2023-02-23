@@ -1,0 +1,477 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\TraversalApp.MVC.bundle.scp.css",
+      "PackagePath": "staticwebassets\\TraversalApp.MVC.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\about.html",
+      "PackagePath": "staticwebassets\\web\\about.html"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\css\\style-starter.css",
+      "PackagePath": "staticwebassets\\web\\assets\\css\\style-starter.css"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\web\\assets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\web\\assets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\web\\assets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\web\\assets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\web\\assets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\web\\assets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\images\\banner1.jpg",
+      "PackagePath": "staticwebassets\\web\\assets\\images\\banner1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\images\\banner2.jpg",
+      "PackagePath": "staticwebassets\\web\\assets\\images\\banner2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\images\\banner3.jpg",
+      "PackagePath": "staticwebassets\\web\\assets\\images\\banner3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\images\\banner4.jpg",
+      "PackagePath": "staticwebassets\\web\\assets\\images\\banner4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\images\\c1.jpg",
+      "PackagePath": "staticwebassets\\web\\assets\\images\\c1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\images\\c2.jpg",
+      "PackagePath": "staticwebassets\\web\\assets\\images\\c2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\images\\c3.jpg",
+      "PackagePath": "staticwebassets\\web\\assets\\images\\c3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\images\\c4.jpg",
+      "PackagePath": "staticwebassets\\web\\assets\\images\\c4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\images\\close.png",
+      "PackagePath": "staticwebassets\\web\\assets\\images\\close.png"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\images\\date.png",
+      "PackagePath": "staticwebassets\\web\\assets\\images\\date.png"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\images\\dots.png",
+      "PackagePath": "staticwebassets\\web\\assets\\images\\dots.png"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\images\\down.png",
+      "PackagePath": "staticwebassets\\web\\assets\\images\\down.png"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\images\\g1.jpg",
+      "PackagePath": "staticwebassets\\web\\assets\\images\\g1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\images\\g10.jpg",
+      "PackagePath": "staticwebassets\\web\\assets\\images\\g10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\images\\g2.jpg",
+      "PackagePath": "staticwebassets\\web\\assets\\images\\g2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\images\\g3.jpg",
+      "PackagePath": "staticwebassets\\web\\assets\\images\\g3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\images\\g4.jpg",
+      "PackagePath": "staticwebassets\\web\\assets\\images\\g4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\images\\g5.jpg",
+      "PackagePath": "staticwebassets\\web\\assets\\images\\g5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\images\\g6.jpg",
+      "PackagePath": "staticwebassets\\web\\assets\\images\\g6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\images\\g7.jpg",
+      "PackagePath": "staticwebassets\\web\\assets\\images\\g7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\images\\g8.jpg",
+      "PackagePath": "staticwebassets\\web\\assets\\images\\g8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\images\\g9.jpg",
+      "PackagePath": "staticwebassets\\web\\assets\\images\\g9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\images\\img-sprite.png",
+      "PackagePath": "staticwebassets\\web\\assets\\images\\img-sprite.png"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\images\\team1.jpg",
+      "PackagePath": "staticwebassets\\web\\assets\\images\\team1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\images\\team2.jpg",
+      "PackagePath": "staticwebassets\\web\\assets\\images\\team2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\images\\team3.jpg",
+      "PackagePath": "staticwebassets\\web\\assets\\images\\team3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\images\\team4.jpg",
+      "PackagePath": "staticwebassets\\web\\assets\\images\\team4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\js\\all.js",
+      "PackagePath": "staticwebassets\\web\\assets\\js\\all.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\js\\app.js",
+      "PackagePath": "staticwebassets\\web\\assets\\js\\app.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\web\\assets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\js\\jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets\\web\\assets\\js\\jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\js\\jquery.countup.js",
+      "PackagePath": "staticwebassets\\web\\assets\\js\\jquery.countup.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\web\\assets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\js\\jquery.waypoints.min.js",
+      "PackagePath": "staticwebassets\\web\\assets\\js\\jquery.waypoints.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\js\\jquery.zoomslider.min.js",
+      "PackagePath": "staticwebassets\\web\\assets\\js\\jquery.zoomslider.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\js\\lightbox-plus-jquery.min.js",
+      "PackagePath": "staticwebassets\\web\\assets\\js\\lightbox-plus-jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\web\\assets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\js\\modernizr-2.6.2.min.js",
+      "PackagePath": "staticwebassets\\web\\assets\\js\\modernizr-2.6.2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\js\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\web\\assets\\js\\owl.carousel.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\web\\assets\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\assets\\js\\theme-change.js",
+      "PackagePath": "staticwebassets\\web\\assets\\js\\theme-change.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\contact.html",
+      "PackagePath": "staticwebassets\\web\\contact.html"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\index.html",
+      "PackagePath": "staticwebassets\\web\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\services.html",
+      "PackagePath": "staticwebassets\\web\\services.html"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\web\\starter-license-W3Layouts.txt",
+      "PackagePath": "staticwebassets\\web\\starter-license-W3Layouts.txt"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.TraversalApp.MVC.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.TraversalApp.MVC.props",
+      "PackagePath": "build\\TraversalApp.MVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.TraversalApp.MVC.props",
+      "PackagePath": "buildMultiTargeting\\TraversalApp.MVC.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.TraversalApp.MVC.props",
+      "PackagePath": "buildTransitive\\TraversalApp.MVC.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

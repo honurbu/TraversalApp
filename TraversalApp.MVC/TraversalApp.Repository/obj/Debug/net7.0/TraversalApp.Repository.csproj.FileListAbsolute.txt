@@ -1,0 +1,17 @@
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Repository\bin\Debug\net7.0\TraversalApp.Repository.deps.json
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Repository\bin\Debug\net7.0\TraversalApp.Repository.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Repository\bin\Debug\net7.0\TraversalApp.Repository.pdb
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Repository\bin\Debug\net7.0\TraversalApp.Core.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Repository\bin\Debug\net7.0\TraversalApp.Core.pdb
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Repository\obj\Debug\net7.0\TraversalApp.Repository.csproj.AssemblyReference.cache
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Repository\obj\Debug\net7.0\TraversalApp.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Repository\obj\Debug\net7.0\TraversalApp.Repository.AssemblyInfoInputs.cache
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Repository\obj\Debug\net7.0\TraversalApp.Repository.AssemblyInfo.cs
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Repository\obj\Debug\net7.0\TraversalApp.Repository.csproj.CoreCompileInputs.cache
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Repository\obj\Debug\net7.0\TraversalApp.Repository.csproj.CopyComplete
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Repository\obj\Debug\net7.0\TraversalApp.Repository.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Repository\obj\Debug\net7.0\refint\TraversalApp.Repository.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Repository\obj\Debug\net7.0\TraversalApp.Repository.pdb
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Repository\obj\Debug\net7.0\ref\TraversalApp.Repository.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Repository\bin\Debug\net7.0\TraversalApp.Repository.runtimeconfig.json
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Repository\obj\Debug\net7.0\TraversalApp.Repository.genruntimeconfig.cache
