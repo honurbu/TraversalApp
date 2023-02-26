@@ -8,9 +8,9 @@ namespace TraversalApp.Core.Entites
 {
     public class Feature2 : BaseEntity
     {
-        public string Title { get; set; }
-        public string Description { get; set; }
-        public string Image { get; set; }
-        public bool Status { get; set; }
+        public string Post1Name { get; set; }
+        public string Post1Description { get; set; }
+        public string Post1Image { get; set; }
+        public bool Post1Status { get; set; }
     }
 }

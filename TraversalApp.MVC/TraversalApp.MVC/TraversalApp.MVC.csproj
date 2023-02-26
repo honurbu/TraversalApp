@@ -24,8 +24,4 @@
     <ProjectReference Include="..\TraversalApp.Service\TraversalApp.Service.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="ViewComponents\" />
-  </ItemGroup>
-
 </Project>

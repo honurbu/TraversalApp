@@ -1,0 +1,92 @@
+﻿@using TraversalApp.Core.Entites
+@model List<Feature>
+
+
+<div class="best-rooms py-5">
+    <div class="container py-md-5">
+        <div class="ban-content-inf row">
+
+            @foreach (var item in Model)
+            {
+                @if (item.IsBigArea == true)
+                {
+                    <div class="maghny-gd-1 col-lg-6">
+                        <div class="maghny-grid">
+                            <figure class="effect-lily border-radius  m-0">
+                                <img class="img-fluid" src="@item.Image" alt="" />
+                                <figcaption>
+                                    <div>
+                                        <h4>@item.Title</h4>
+                                        <p>@item.Description$ </p>
+                                    </div>
+
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                }
+                else
+                { <br />
+                    <div class="maghny-gd-1 col-lg-6 mt-lg-0 mt-4">
+                        <div class="row">
+                            <div class="maghny-gd-1 col-6">
+                                <div class="maghny-grid">
+                                    <figure class="effect-lily border-radius">
+                                        <img class="img-fluid" src="@item.Image" alt="" />
+                                        <figcaption>
+                                            <div>
+                                                <h4>@item.Title</h4>
+                                                <p>@item.Description$ </p>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="maghny-gd-1 col-6">
+                                <div class="maghny-grid">
+                                    <figure class="effect-lily border-radius">
+                                        <img class="img-fluid" src="@item.Image" alt="" />
+                                        <figcaption>
+                                            <div>
+                                                <h4>@item.Title</h4>
+                                                <p>@item.Description$ </p>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            @*
+                        <div class="maghny-gd-1 col-6 mt-4">
+                            <div class="maghny-grid">
+                                <figure class="effect-lily border-radius">
+                                    <img class="img-fluid" src="~/web/assets/images/g7.jpg" alt="" />
+                                    <figcaption>
+                                        <div>
+                                            <h4>3Days, 4 Nights</h4>
+                                            <p>From 1820$ </p>
+                                        </div>
+
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                            *@
+
+                            @*---------region--------*@
+                        </div>
+                    </div>
+                }
+
+            }
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+</div>

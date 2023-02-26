@@ -10,11 +10,14 @@ namespace TraversalApp.Repository.Context
 {
     public class AppDbContext : DbContext
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer("server=localhost; Database=TraversalAppProject; Trusted_Connection=SSPI; Encrypt=false; TrustServerCertificate=true");
-        }
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    optionsBuilder.UseSqlServer("server=localhost; Database=TraversalAppProject; Trusted_Connection=SSPI; Encrypt=false; TrustServerCertificate=true");
+        //}
 
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        {
+        }
 
 
         public DbSet<About> Abouts { get; set; }

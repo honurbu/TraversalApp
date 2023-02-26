@@ -15,5 +15,6 @@ namespace TraversalApp.Core.Services
         Task UpdateAsync(T entity);
 
         Task<IEnumerable<T>> GetAllAsync();
+
     }
 }
