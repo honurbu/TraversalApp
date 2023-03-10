@@ -1,0 +1,51 @@
+﻿@model TraversalApp.Core.DTOs.UserEditDto
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h1>Profilimi Düzenle</h1>
+
+<form method="post" enctype="multipart/form-data">
+
+    @Html.Label("Adınız")
+    <input type="text" asp-for="Name" class="form-control" />
+    <span asp-validation-for="Name"></span> <br />
+
+
+    @Html.Label("Soyadınız")
+    <input type="text" asp-for="Surname" class="form-control" />
+    <span asp-validation-for="Surname"></span> <br />
+
+    @Html.Label("Kullanıcı Adınız")
+    <input type="text" asp-for="UserName" class="form-control" />
+    <span asp-validation-for="UserName"></span> <br />
+
+
+    @Html.Label("Mail")
+    <input type="email" asp-for="Email" class="form-control" />
+    <span asp-validation-for="Email"></span> <br />
+
+
+    @Html.Label("Şifre")
+    <input type="text" asp-for="Password" class="form-control" required />
+    <span asp-validation-for="Password"></span> <br />
+
+
+    @Html.Label("Şifre Onayla")
+    <input type="text" asp-for="ConfirmPassword" class="form-control"  required/>
+    <span asp-validation-for="ConfirmPassword"></span> <br />
+
+
+    @Html.Label("Telefon Numaranız")
+    <input type="text" asp-for="PhoneNumber" class="form-control" />
+    <span asp-validation-for="PhoneNumber"></span> <br />
+
+    <div class="form-group">
+        <label> Resim Seçin </label>
+        <input type="file" asp-for="Images" />
+    </div>
+    <br />
+    <button class="btn btn-danger">Bilgilerimi Güncelle</button>
+</form>

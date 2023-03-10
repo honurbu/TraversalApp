@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using TraversalApp.Core.Repositories;
@@ -33,6 +34,21 @@ namespace TraversalApp.Service.Services
         public async Task<IEnumerable<T>> GetAllAsync()
         {
             return await _repository.GetAll().ToListAsync();
+        }
+
+        public Task<T> GetByIdAsync(int id)
+        {
+            var values = _repository.GetByIdAsync(id);
+            if(values == null)
+            {
+                throw new DirectoryNotFoundException($"{typeof(T).Name}({id}) not found");
+            }
+            return values;
+        }
+
+        public IQueryable<T> GetListByFilter(Expression<Func<T, bool>> expression)
+        {
+            return _repository.GetListByFilter(expression);
         }
 
         public async Task RemoveAsync(T entity)

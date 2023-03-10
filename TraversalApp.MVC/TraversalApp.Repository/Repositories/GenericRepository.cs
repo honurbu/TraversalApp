@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using TraversalApp.Core.Repositories;
@@ -12,7 +13,7 @@ namespace TraversalApp.Repository.Repositories
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
 
-        private readonly AppDbContext _context;
+        protected readonly AppDbContext _context;
         private readonly DbSet<T> _dbSet;
 
         public GenericRepository(AppDbContext context)
@@ -30,6 +31,16 @@ namespace TraversalApp.Repository.Repositories
         {
             return _dbSet.AsNoTracking().AsQueryable();
             //return (IQueryable<T>)_context.Set<T>().ToList();
+        }
+
+        public async Task<T> GetByIdAsync(int id)
+        {
+            return await _dbSet.FindAsync(id);
+        }
+
+        public IQueryable<T> GetListByFilter(Expression<Func<T, bool>> expression)
+        {
+            return _dbSet.Where(expression);
         }
 
         public void Remove(T entity)

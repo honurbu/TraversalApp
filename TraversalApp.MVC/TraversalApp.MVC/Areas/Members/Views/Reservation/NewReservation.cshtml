@@ -1,0 +1,32 @@
+﻿@model TraversalApp.Core.Entites.Reservation
+@{
+    ViewData["Title"] = "NewReservation";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h1>Yeni Rezervasyon Sayfası</h1>
+<form method="post">
+
+    <div class="form-group">
+        @Html.Label("Lokasyon")
+        @Html.DropDownListFor(x => x.Destination, (List<SelectListItem>)ViewBag.value, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Kişi Sayısı")
+        <input type="text" asp-for="PersonCount" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Tarih")
+        <input type="date" asp-for="ReservationDate" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Eklemek İstedikleriniz")
+        <input type="text" asp-for="Description" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-dark" onclick="alert('Rezervasyonunuz Onaya alındı. Onaylanınca bildirileceksiniz !')">Rezervasyon Oluştur!</button>
+
+</form>
