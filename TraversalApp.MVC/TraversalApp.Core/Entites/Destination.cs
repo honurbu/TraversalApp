@@ -15,5 +15,17 @@ namespace TraversalApp.Core.Entites
         public string Description { get; set; }
         public int Capacity { get; set; }
         public bool Status { get; set; }
+        public string TopDetails { get; set; }
+        public string SubDetails { get; set; }
+        public string CoverImage { get; set; }
+        public string ContentImage { get; set; }
+        public string? Maxim { get; set; }
+        public string? MaximAuthor { get; set; }
+        public bool MaximStatus { get; set; }
+
+
+        //Navigations
+        public ICollection<Comment> Comments { get; set;}
+
     }
 }

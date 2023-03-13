@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,6 +16,11 @@ namespace TraversalApp.Core.Services
         Task UpdateAsync(T entity);
 
         Task<IEnumerable<T>> GetAllAsync();
+
+        Task<T> GetByIdAsync(int id);
+        IQueryable<T> GetListByFilter(Expression<Func<T, bool>> expression);
+
+
 
     }
 }
