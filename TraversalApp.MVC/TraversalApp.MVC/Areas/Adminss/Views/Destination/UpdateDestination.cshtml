@@ -1,0 +1,86 @@
+﻿@model TraversalApp.Core.Entites.Destination
+
+@{
+    ViewData["Title"] = "UpdateDestination";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Rota Güncelleme Ekranı</h1>
+
+<form method="post">
+    @Html.HiddenFor(x=>x.Id)
+    <div class="form-group">
+        @Html.Label("Şehir*")
+        <input type="text" asp-for="City" class="form-control" required />
+    </div>
+    <br />
+
+    <div class="form-group">
+        @Html.Label("Gündüz-Gece*")
+        <input type="text" asp-for="DayNight" class="form-control" required />
+    </div>
+    <br />
+
+    <div class="form-group">
+        @Html.Label("Fiyat*")
+        <input type="text" asp-for="Price" class="form-control" required />
+    </div>
+    <br />
+
+    <div class="form-group">
+        @Html.Label("Açıklama*")
+        <input type="text" asp-for="Description" class="form-control" required />
+    </div>
+    <br />
+
+    <div class="form-group">
+        @Html.Label("Ana Görsel*")
+        <input type="text" asp-for="Image" class="form-control" required />
+    </div>
+    <br />
+
+    <div class="form-group">
+        @Html.Label("Kapak Görsel*")
+        <input type="text" asp-for="CoverImage" class="form-control" required />
+    </div>
+    <br />
+
+    <div class="form-group">
+        @Html.Label("Kapasite*")
+        <input type="text" asp-for="Capacity" class="form-control" required />
+    </div>
+    <br />
+
+    <div class="form-group">
+        @Html.Label("Ünlü Sözü")
+        <input type="text" asp-for="Maxim" class="form-control" />
+    </div>
+    <br />
+
+    <div class="form-group">
+        @Html.Label("Ünlü Söz Sahibi")
+        <input type="text" asp-for="MaximAuthor" class="form-control" />
+    </div>
+    <br />
+
+    <div class="form-group">
+        @Html.Label("Resim üstündeki yazı*")
+        <textarea cols="30" rows="5" class="form-control" asp-for="TopDetails" required></textarea>
+    </div>
+    <br />
+
+    <div class="form-group">
+        @Html.Label("İçerik Görsel*")
+        <input type="text" asp-for="ContentImage" class="form-control" required />
+    </div>
+    <br />
+
+    <div class="form-group">
+        @Html.Label("Resim Altındaki yazı*")
+        <textarea cols="30" rows="5" class="form-control" asp-for="SubDetails" required></textarea>
+    </div>
+    <br />
+
+    <button type="submit" class="btn btn-dark" onclick="alert('Yeni Rota Oluşturuldu !')">Oluştur!</button>
+
+</form>

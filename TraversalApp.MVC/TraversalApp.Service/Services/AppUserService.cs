@@ -8,19 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using TraversalApp.Core.DTOs;
 using TraversalApp.Core.Entites;
+using TraversalApp.Core.Repositories;
 using TraversalApp.Core.Services;
 using TraversalApp.Core.UnitOfWorks;
+using TraversalApp.Repository.Repositories;
 using TraversalApp.Repository.UnitOfWorks;
 
 namespace TraversalApp.Service.Services
 {
-    public class AppUserService : IAppUserService   
+    public class AppUserService : GenericServices<AppUser>, IAppUserService
     {
+        private readonly IAppUserRepository _appUserRepository;
         private readonly UserManager<AppUser> _userManager;
         private readonly IUnitOfWork _unitOfWork;
 
-        public AppUserService(UserManager<AppUser> userManager, IUnitOfWork unitOfWork)
+        public AppUserService(IGenericRepository<AppUser> repository, UserManager<AppUser> userManager, IUnitOfWork unitOfWork, IAppUserRepository appUserRepository) : base(repository, unitOfWork)
         {
+            _appUserRepository = appUserRepository;
             _userManager = userManager;
             _unitOfWork = unitOfWork;
         }
@@ -36,7 +40,7 @@ namespace TraversalApp.Service.Services
             };
             var result = await _userManager.CreateAsync(user, appUserDto.Password);
 
-            if(!result.Succeeded)
+            if (!result.Succeeded)
             {
 
                 var errors = result.Errors.Select(e => e.Description).ToList();
@@ -51,26 +55,3 @@ namespace TraversalApp.Service.Services
 }
 
 
-#region
-//public async Task<Response<UserDto>> CreateUserAsync(CreateUserDto createUserDto)
-//{
-//    var user = new User
-//    {
-//        Email = createUserDto.Email,
-//        UserName = createUserDto.UserName,
-//    };
-
-//    // Password hashing
-//    var result = await _userManager.CreateAsync(user, createUserDto.Password);
-
-//    if (!result.Succeeded)
-//    {
-//        var errors = result.Errors.Select(e => e.Description).ToList();
-//        return Response<UserDto>.Fail(new ErrorDto(errors, true), 400);
-//    }
-
-//    await _unitOfWork.CommitAsync();
-
-//    return Response<UserDto>.Success(ObjectMapper.Mapper.Map<UserDto>(user), 200);
-//}
-#endregion

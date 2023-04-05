@@ -1,4 +1,4 @@
-using FluentValidation.AspNetCore;
+﻿using FluentValidation.AspNetCore;
 using FluentValidation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -17,32 +17,17 @@ using TraversalApp.Service.Mapping;
 using TraversalApp.Service.Services;
 using TraversalApp.Core.DTOs;
 using TraversalApp.Service.Validations;
+using TraversalApp.Service.Container;
 
 var builder = WebApplication.CreateBuilder(args);
 
 
-
-
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
-// Repository Layer Dependency Injection
-builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-builder.Services.AddScoped(typeof(IDestinationRepository), typeof(DestinationRepository));
-builder.Services.AddScoped(typeof(IFeatureRepository), typeof(FeatureRepository));
-builder.Services.AddScoped(typeof(ISubAboutRepository), typeof(SubAboutRepository));
-builder.Services.AddScoped(typeof(ITestimonialRepository), typeof(TestimonialRepository));
-builder.Services.AddScoped(typeof(ICommentRepository), typeof(CommentRepository));
-builder.Services.AddScoped(typeof(IReservationRepository), typeof(ReservationRepository));
 
+// Repository Layer Dependency Injection
 // Service Layer Dependency Injection
-//builder.Services.AddScoped(typeof(IGenericService<TEntity, TDto>), typeof(GenericService<>));
-builder.Services.AddScoped(typeof(IDestinationService), typeof(DestinationService));
-builder.Services.AddScoped(typeof(IFeatureService), typeof(FeatureService));
-builder.Services.AddScoped(typeof(ISubAboutService), typeof(SubAboutService));
-builder.Services.AddScoped(typeof(ITestimonialService), typeof(TestimonialService));
-builder.Services.AddScoped(typeof(ICommentService), typeof(CommentService));
-builder.Services.AddScoped(typeof(IAppUserService), typeof(AppUserService));
-builder.Services.AddScoped(typeof(IReservationService), typeof(ReservationService));
+builder.Services.ContainerDependencies();
 
 
 builder.Services.AddAutoMapper(typeof(MapProfile));
@@ -52,6 +37,13 @@ builder.Services.AddSingleton<IValidator<AppUserDto>, AppUserValidator>();
 builder.Services.AddControllersWithViews().AddFluentValidation(options =>
 {
     options.RegisterValidatorsFromAssemblyContaining<Program>();
+});
+
+builder.Services.AddLogging(x=>
+{
+    x.ClearProviders();
+    x.SetMinimumLevel(LogLevel.Debug);      //Debugdan itibaren loglamaya başla.
+    x.AddDebug();                           // Output sekmesinde sun.
 });
 
 builder.Services.AddDbContext<AppDbContext>(x =>
@@ -66,6 +58,7 @@ builder.Services.AddDbContext<AppDbContext>(x =>
 builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<AppDbContext>().AddErrorDescriber<CustomIdentityValidator>().AddEntityFrameworkStores<AppDbContext>();
 
 
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddMvc(config =>
@@ -74,11 +67,15 @@ builder.Services.AddMvc(config =>
         .RequireAuthenticatedUser()
         .Build();
         config.Filters.Add(new AuthorizeFilter(policy));
+       
     });
 
 builder.Services.AddMvc();
 var app = builder.Build();
 
+var loggerFactory = app.Services.GetRequiredService<ILoggerFactory>();
+var path = Directory.GetCurrentDirectory();
+loggerFactory.AddFile($"{path}//Logs//Log1.txt");
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -87,6 +84,8 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
+app.UseStatusCodePagesWithReExecute("/ErrorPage/Error404", "?code={0}");
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
@@ -106,5 +105,14 @@ app.UseEndpoints(endpoints =>
       pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
     );
 });
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+      name: "areas",
+      pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+    );
+});
+
 
 app.Run();

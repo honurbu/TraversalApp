@@ -1,0 +1,39 @@
+﻿@using TraversalApp.Core.Entites
+@model List<AppUser>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Kullanıcı Listesi</h1>
+
+<table class="table table-inverse">
+
+    <tr>
+        <th>#</th>
+        <th>Ad - Soyad</th>
+        <th>Kullanıcı Adı</th>
+        <th>Mail</th>
+        <th>Sil</th>
+        <th>Düzenle</th>
+        <th>Kullanıcının Yorumları</th>
+        <th>Kullanıcının Tur Geçmişi</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td> @item.Id</td>
+            <td> @item.Name  @item.Surname</td>
+            <td> @item.UserName</td>
+            <td> @item.Email</td>
+            <td> <a href="/Adminss/Users/DeleteUser/@item.Id" class="btn btn-outline-danger" onclick="return confirm('Silmek İstediğinize Emin Misiniz ?')" >Kullanıcıyı Sil</a></td>
+            <td> <a href="/Adminss/Users/EditUser/@item.Id" class="btn btn-outline-warning">Kullanıcıyı Güncelle</a></td>
+            <td> <a href="/Adminss/Users/CommentUser/@item.Id" class="btn btn-outline-dark">Kullanıcının Yorumları </a></td>
+            <td> <a href="/Adminss/Users/ReservationUser/@item.Id" class="btn btn-outline-secondary">Kullanıcının Onaylanan Tur Geçmişi</a></td>
+        </tr>
+    }
+
+</table>
+
+<a href="/login/SignUp" class="btn btn-dark">Yeni Kullanıcı Kaydı</a>

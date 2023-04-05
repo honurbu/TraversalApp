@@ -9,6 +9,9 @@
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="ClosedXML" Version="0.100.3" />
+    <PackageReference Include="EPPlus" Version="6.2.0" />
+    <PackageReference Include="iTextSharp.LGPLv2.Core" Version="3.3.3" />
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.3" />
@@ -21,7 +24,8 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.5" />
+    <PackageReference Include="Serilog.Extensions.Logging.File" Version="3.0.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,9 +33,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\Adminss\Data\" />
+    <Folder Include="Areas\Adminss\Models\" />
     <Folder Include="Areas\Members\Data\" />
     <Folder Include="Areas\Members\Models\" />
     <Folder Include="wwwroot\userImages\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\admin\.github\workflows\handle-new-issue-comment.yml" />
+    <None Include="wwwroot\admin\.github\workflows\handle-new-issue.yml" />
+    <None Include="wwwroot\admin\.github\workflows\issue-staler.yml" />
   </ItemGroup>
 
 </Project>

@@ -20,5 +20,10 @@ namespace TraversalApp.Repository.Repositories
         {
             return _context.Comments.Include(x => x.Destination);
         }
+
+        public IQueryable<Comment> GetListCommentWithDestination()
+        {
+             return _context.Comments.Include(x => x.Destination);
+        }
     }
 }

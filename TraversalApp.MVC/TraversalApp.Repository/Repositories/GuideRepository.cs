@@ -14,5 +14,26 @@ namespace TraversalApp.Repository.Repositories
         public GuideRepository(AppDbContext context) : base(context)
         {
         }
+
+        public void ChangeToFalseByGuid(int id)
+        {
+            var guidesStatus = _context.Guides.Find(id);
+            if (guidesStatus != null)
+            {
+                guidesStatus.Status = false;
+            }
+
+        }
+
+        public void ChangeToTrueByGuid(int id)
+        {
+            var guidesStatus = _context.Guides.Find(id);
+            if (guidesStatus != null)
+            {
+                guidesStatus.Status = true;
+            }
+        }
+
+
     }
 }

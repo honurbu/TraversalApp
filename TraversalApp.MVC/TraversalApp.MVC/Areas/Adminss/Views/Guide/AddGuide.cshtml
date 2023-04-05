@@ -1,0 +1,48 @@
+﻿@model TraversalApp.Core.Entites.Guide
+
+@{
+    ViewData["Title"] = "AddGuide";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Rehber Ekle</h1>
+
+<form method="post">
+
+    <div class="form-group">
+        @Html.Label("Ad-Soyad*")
+        <input type="text" asp-for="Name" class="form-control"  />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <br />
+
+    <div class="form-group">
+        @Html.Label("Hakkında*")
+        <input type="text" asp-for="Description" class="form-control"  />
+        <span asp-validation-for="Description" class="text-danger"></span>
+
+    </div>
+    <br />
+
+    <div class="form-group">
+        @Html.Label("Resim")
+        <input type="text" asp-for="Image" class="form-control"  />
+    </div>
+    <br />
+
+    <div class="form-group">
+        @Html.Label("Twitter Adresi")
+        <input type="text" asp-for="TwitterURL" class="form-control"  />
+    </div>
+    <br />
+
+    <div class="form-group">
+        @Html.Label("Instagram Adresi")
+        <input type="text" asp-for="InstagramURL" class="form-control"  />
+    </div>
+    <br />
+
+
+    <button type="submit" class="btn btn-dark" >Oluştur!</button>
+
+</form>

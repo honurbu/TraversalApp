@@ -19,9 +19,20 @@ namespace TraversalApp.Service.Services
             _reservationRepository= reservationRepository;
         }
 
-        public  IQueryable<Reservation> GetApprovalReservation(int id)
+
+        public List<Reservation> GetApprovalReservationByAccepted(int id)
         {
-            return _reservationRepository.GetListByFilter(x => x.AppUserId == id && x.Status == "Onay Bekliyor !");
+            return _reservationRepository.GetApprovalReservationByAccepted(id);
+        }
+
+        public List<Reservation> GetApprovalReservationByPrevious(int id)
+        {
+            return _reservationRepository.GetApprovalReservationByPrevious(id);
+        }
+
+        public List<Reservation> GetApprovalReservationByWaitApproval(int id)
+        {
+            return _reservationRepository.GetApprovalReservationByWaitApproval(id);
         }
     }
 }

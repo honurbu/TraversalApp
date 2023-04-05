@@ -1,0 +1,38 @@
+﻿@using TraversalApp.Core.Entites
+@model List<Destination>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Tur Rotaları</h1>
+
+<table class="table table-inverse">
+
+    <tr>
+        <th>#</th>
+        <th>Şehir</th>
+        <th>Kapasite</th>
+        <th>Fiyat</th>
+        <th>Sitede Gör</th>
+        <th>Güncelle</th>
+        <th>Sil</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td> @item.Id</td>
+            <td> @item.City</td>
+            <td> @item.Capacity</td>
+            <td> $ @item.Price</td>
+            <td> <a href="/Destination/DestinationDetails/@item.Id" class="btn btn-outline-dark">Sitede Gör</a></td>
+            <td> <a href="/Adminss/Destination/UpdateDestination/@item.Id" class="btn btn-outline-warning">Güncelle</a></td>
+            <td> <a href="/Adminss/Destination/DeleteDestination/@item.Id" class="btn btn-outline-danger">Sil</a></td>
+        </tr>
+    }
+
+
+</table>
+<a href="/Adminss/Destination/AddDestination" class="btn btn-outline-dark">Oluştur</a>

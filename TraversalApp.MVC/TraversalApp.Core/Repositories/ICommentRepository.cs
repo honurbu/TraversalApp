@@ -10,6 +10,7 @@ namespace TraversalApp.Core.Repositories
     public interface ICommentRepository : IGenericRepository<Comment>
     {
         IQueryable<Comment> GetDestinationById(int id);
+        IQueryable<Comment> GetListCommentWithDestination();
 
     }
 }

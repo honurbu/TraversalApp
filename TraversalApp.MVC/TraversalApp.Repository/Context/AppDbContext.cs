@@ -11,10 +11,6 @@ namespace TraversalApp.Repository.Context
 {
     public class AppDbContext : IdentityDbContext<AppUser,AppRole,int>
     {
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    optionsBuilder.UseSqlServer("server=localhost; Database=TraversalAppProject; Trusted_Connection=SSPI; Encrypt=false; TrustServerCertificate=true");
-        //}
 
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
@@ -32,5 +28,6 @@ namespace TraversalApp.Repository.Context
         public DbSet<Testimonial> Testimonials { get; set; }
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Reservation> Reservations { get; set; }
+        public DbSet<RStatus> RStatuses { get; set; }
     }
 }

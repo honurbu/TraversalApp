@@ -1,0 +1,177 @@
+2023-04-04T15:01:52.6285590+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-04T15:01:52.6411916+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-04-04T15:01:52.6425085+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-04-04T15:01:52.7540081+03:00 40000002-000b-fd00-b63f-84710c7967bb [INF] Index page open (9e9201ee)
+2023-04-04T15:01:52.7600383+03:00 40000002-000b-fd00-b63f-84710c7967bb [ERR] Error Logs (ff83272d)
+2023-04-04T15:02:18.2560777+03:00 40000018-000a-fb00-b63f-84710c7967bb [INF] Index page open (9e9201ee)
+2023-04-04T15:02:18.2573592+03:00 40000018-000a-fb00-b63f-84710c7967bb [ERR] Error Logs (ff83272d)
+2023-04-04T15:02:19.0617483+03:00 40000006-000c-f900-b63f-84710c7967bb [INF] 4/4/2023 12:00:00 AM Privacy page open (ac572ac2)
+2023-04-04T15:02:19.6545624+03:00 4000001c-000a-fb00-b63f-84710c7967bb [INF] Index page open (9e9201ee)
+2023-04-04T15:02:19.6562955+03:00 4000001c-000a-fb00-b63f-84710c7967bb [ERR] Error Logs (ff83272d)
+2023-04-04T15:02:20.1084976+03:00 40000002-0008-fc00-b63f-84710c7967bb [INF] 4/4/2023 12:00:00 AM Privacy page open (ac572ac2)
+2023-04-04T15:02:20.3633808+03:00 4000001a-000e-ff00-b63f-84710c7967bb [INF] Index page open (9e9201ee)
+2023-04-04T15:02:20.3650231+03:00 4000001a-000e-ff00-b63f-84710c7967bb [ERR] Error Logs (ff83272d)
+2023-04-04T15:02:20.7782397+03:00 40000004-0008-fb00-b63f-84710c7967bb [INF] Index page open (9e9201ee)
+2023-04-04T15:02:20.7798289+03:00 40000004-0008-fb00-b63f-84710c7967bb [ERR] Error Logs (ff83272d)
+2023-04-04T15:03:18.5462197+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-04T15:03:18.5523167+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-04-04T15:03:18.5525124+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-04-04T15:03:30.8694490+03:00 40000025-0004-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("31"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[ConfirmPassword], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-04-04T15:03:31.0662651+03:00 40000025-0004-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2023-04-04T15:03:31.0853595+03:00 40000025-0004-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2023-04-04T15:03:31.1335432+03:00 40000027-0004-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[ConfirmPassword], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-04-04T15:03:46.9610235+03:00 4000002d-0002-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[InstagramURL], [g].[Name], [g].[Status], [g].[TwitterURL]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-04-04T15:06:27.9024018+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-04T15:06:27.9081545+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-04-04T15:06:27.9084349+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-04-04T15:06:28.8832815+03:00 4000001a-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[InstagramURL], [g].[Name], [g].[Status], [g].[TwitterURL]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-04-04T15:06:29.0682314+03:00 4000002d-0004-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[InstagramURL], [g].[Name], [g].[Status], [g].[TwitterURL]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-04-04T15:13:02.3372173+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-04T15:13:02.3428059+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-04-04T15:13:02.3430100+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-04-04T15:13:03.3194542+03:00 40000051-0008-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[InstagramURL], [g].[Name], [g].[Status], [g].[TwitterURL]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-04-04T15:13:20.2048526+03:00 40000008-0002-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("18"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Guides] ([Description], [Image], [InstagramURL], [Name], [Status], [TwitterURL])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);" (0723d8ff)
+2023-04-04T15:15:43.1271023+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-04T15:15:43.1323586+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-04-04T15:15:43.1325264+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-04-04T15:15:44.0578404+03:00 40000006-0004-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[InstagramURL], [g].[Name], [g].[Status], [g].[TwitterURL]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-04-04T15:56:15.0266773+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-04T15:56:15.0330802+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-04-04T15:56:15.0333048+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-04-04T15:56:16.0385061+03:00 40000006-000b-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("36"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[ConfirmPassword], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0" (0723d8ff)
+2023-04-04T15:56:16.1618857+03:00 40000006-000b-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2023-04-04T15:56:16.1813437+03:00 40000006-000b-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2023-04-04T15:56:16.2229329+03:00 40000006-000b-fc00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Unable to resolve service for type 'TraversalApp.Core.Services.IExcelService' while attempting to activate 'TraversalApp.MVC.Controllers.ExcelController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method157(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-04-04T15:56:42.7522989+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-04T15:56:42.7573814+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-04-04T15:56:42.7575531+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-04-04T15:56:45.0206702+03:00 4000002b-0008-fa00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: No database provider has been configured for this DbContext. A provider can be configured by overriding the 'DbContext.OnConfiguring' method or by using 'AddDbContext' on the application service provider. If 'AddDbContext' is used, then also ensure that your DbContext type accepts a DbContextOptions<TContext> object in its constructor and passes it to the base constructor for DbContext.
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.Initialize(IServiceProvider scopedProvider, DbContextOptions contextOptions, DbContext context)
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_Model()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Select[TSource,TResult](IQueryable`1 source, Expression`1 selector)
+   at TraversalApp.MVC.Controllers.ExcelController.DestinationList() in C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC\Controllers\ExcelController.cs:line 28
+   at TraversalApp.MVC.Controllers.ExcelController.DestinationExcelReport() in C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC\Controllers\ExcelController.cs:line 56
+   at lambda_method52(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-04-04T16:01:25.3853566+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-04T16:01:25.3913773+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-04-04T16:01:25.3915826+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-04-04T16:01:26.4860858+03:00 40000006-000a-f900-b63f-84710c7967bb [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[City], [d].[DayNight], [d].[Price], [d].[Capacity]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-04-04T16:01:27.0600733+03:00 40000004-0001-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[City], [d].[DayNight], [d].[Price], [d].[Capacity]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-04-04T16:01:51.7281009+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-04T16:01:51.7336554+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-04-04T16:01:51.7338015+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-04-04T16:07:00.3682465+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-04T16:07:00.3747905+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-04-04T16:07:00.3750024+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-04-04T16:07:10.4112648+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-04T16:07:10.4169893+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-04-04T16:07:10.4172676+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-04-04T16:13:58.0323529+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-04T16:13:58.0391353+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-04-04T16:13:58.0393383+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-04-04T16:14:20.3365001+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-04T16:14:20.3422189+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-04-04T16:14:20.3425096+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-04-04T16:14:45.2356858+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-04T16:14:45.2408923+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-04-04T16:14:45.2410703+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-04-04T16:17:03.3080276+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-04T16:17:03.3134568+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-04-04T16:17:03.3135750+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-04-04T16:20:32.7552394+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-04T16:20:32.7602869+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-04-04T16:20:32.7604493+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-04-04T16:21:57.0531878+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-04T16:21:57.0594297+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-04-04T16:21:57.0595621+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-04-04T16:22:48.0315871+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-04T16:22:48.0367689+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-04-04T16:22:48.0369229+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)

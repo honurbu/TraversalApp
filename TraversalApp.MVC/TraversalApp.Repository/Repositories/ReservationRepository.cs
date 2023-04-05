@@ -16,9 +16,20 @@ namespace TraversalApp.Repository.Repositories
         {
         }
 
-        public IQueryable<Reservation> GetApprovalReservation(int id)
+
+        public List<Reservation> GetApprovalReservationByAccepted(int id)
         {
-            return _context.Reservations.Include(x=>x.Destination);
+            return _context.Reservations.Include(x=>x.AppUser).Include(x => x.Destination).Include(y=>y.RStatus).Where(x=>x.RStatusId==2 && x.AppUserId == id).ToList();
+        }
+
+        public List<Reservation> GetApprovalReservationByPrevious(int id)
+        {
+            return _context.Reservations.Include(x => x.Destination).Include(y => y.RStatus).Where(x => x.RStatusId == 3 && x.AppUserId == id).ToList();
+        }
+
+        public List<Reservation> GetApprovalReservationByWaitApproval(int id)
+        {
+            return _context.Reservations.Include(x => x.Destination).Include(y=>y.RStatus).Where(x => x.RStatusId == 1 && x.AppUserId == id).ToList();
         }
     }
 }

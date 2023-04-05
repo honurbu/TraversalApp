@@ -9,5 +9,8 @@ namespace TraversalApp.Core.Repositories
 {
     public interface IGuideRepository : IGenericRepository<Guide>
     {
+        void ChangeToFalseByGuid(int id);
+        void ChangeToTrueByGuid(int id);
+
     }
 }

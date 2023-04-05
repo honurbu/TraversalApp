@@ -8,7 +8,7 @@ using TraversalApp.Core.Entites;
 
 namespace TraversalApp.Core.Services
 {
-    public interface IAppUserService 
+    public interface IAppUserService : IGenericService<AppUser>
     {
         Task<AppUserDto> CreateUserAsync(AppUserDto appUserDto);
 

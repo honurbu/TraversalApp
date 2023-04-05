@@ -482,11 +482,9 @@ namespace TraversalApp.Repository.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Image")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("InstagramURL")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -497,7 +495,6 @@ namespace TraversalApp.Repository.Migrations
                         .HasColumnType("bit");
 
                     b.Property<string>("TwitterURL")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -522,6 +519,23 @@ namespace TraversalApp.Repository.Migrations
                     b.ToTable("Newsletters");
                 });
 
+            modelBuilder.Entity("TraversalApp.Core.Entites.RStatus", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Defination")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("RStatuses");
+                });
+
             modelBuilder.Entity("TraversalApp.Core.Entites.Reservation", b =>
                 {
                     b.Property<int>("Id")
@@ -537,22 +551,25 @@ namespace TraversalApp.Repository.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Destination")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("DestinationId")
+                        .HasColumnType("int");
 
                     b.Property<int>("PersonCount")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RStatusId")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("ReservationDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Status")
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("Id");
 
                     b.HasIndex("AppUserId");
+
+                    b.HasIndex("DestinationId");
+
+                    b.HasIndex("RStatusId");
 
                     b.ToTable("Reservations");
                 });
@@ -676,7 +693,23 @@ namespace TraversalApp.Repository.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("TraversalApp.Core.Entites.Destination", "Destination")
+                        .WithMany("Reservations")
+                        .HasForeignKey("DestinationId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("TraversalApp.Core.Entites.RStatus", "RStatus")
+                        .WithMany("Reservations")
+                        .HasForeignKey("RStatusId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("AppUser");
+
+                    b.Navigation("Destination");
+
+                    b.Navigation("RStatus");
                 });
 
             modelBuilder.Entity("TraversalApp.Core.Entites.AppUser", b =>
@@ -687,6 +720,13 @@ namespace TraversalApp.Repository.Migrations
             modelBuilder.Entity("TraversalApp.Core.Entites.Destination", b =>
                 {
                     b.Navigation("Comments");
+
+                    b.Navigation("Reservations");
+                });
+
+            modelBuilder.Entity("TraversalApp.Core.Entites.RStatus", b =>
+                {
+                    b.Navigation("Reservations");
                 });
 #pragma warning restore 612, 618
         }

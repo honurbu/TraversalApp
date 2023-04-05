@@ -22,20 +22,24 @@ namespace TraversalApp.MVC.Areas.Members.Controllers
             _userManager = userManager;
         }
 
-        public IActionResult ActiveReservation()
+        public async Task<IActionResult> ActiveReservation()
         {
-            return View();
+            var userId = await _userManager.FindByNameAsync(User.Identity.Name);
+            var values = _reservationService.GetApprovalReservationByAccepted(userId.Id);
+            return View(values);
         }
 
-        public IActionResult OldReservation()
+        public async Task<IActionResult> OldReservation()
         {
-            return View();
+            var userId = await _userManager.FindByNameAsync(User.Identity.Name);
+            var values = _reservationService.GetApprovalReservationByPrevious(userId.Id);
+            return View(values);
         }   
         
         public async  Task<IActionResult> ApprovalReservation()
         {
             var userId = await _userManager.FindByNameAsync(User.Identity.Name);
-            var values = _reservationService.GetApprovalReservation(userId.Id);
+            var values = _reservationService.GetApprovalReservationByWaitApproval(userId.Id);
             return View(values);
         }
 
@@ -52,12 +56,15 @@ namespace TraversalApp.MVC.Areas.Members.Controllers
         [HttpPost]
         public async Task<IActionResult> NewReservation(Reservation reservation)
         {
-            reservation.Status = "Onay Bekliyor !";
+            //reservation.Status = "Onay Bekliyor !";
+           var c = reservation.RStatusId = 1;
+           reservation.RStatusId = 1;
+        
             var userId = await _userManager.FindByNameAsync(User.Identity.Name);
             reservation.AppUserId = userId.Id;
             await _reservationService.AddAsync(reservation);
             
-            return RedirectToAction("ActiveReservation","Reservation");
+            return RedirectToAction("ActiveReservation","Members/Reservation", new { area = "" }); //BU alana girtmiyor ? url önünde members istiyor sanırım. çöz.
             //return RedirectToAction("ActiveReservation/Reservation");
         }
     }

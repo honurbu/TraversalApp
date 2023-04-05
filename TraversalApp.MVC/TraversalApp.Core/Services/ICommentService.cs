@@ -10,5 +10,7 @@ namespace TraversalApp.Core.Services
     public interface ICommentService : IGenericService<Comment>
     {
         IQueryable<Comment> GetDestinationById(int id);
+        IQueryable<Comment> GetListCommentWithDestination();
+
     }
 }

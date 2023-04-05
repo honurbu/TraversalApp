@@ -26,6 +26,7 @@ namespace TraversalApp.Core.Entites
 
         //Navigations
         public ICollection<Comment> Comments { get; set;}
+        public ICollection<Reservation> Reservations { get; set;}
 
     }
 }
