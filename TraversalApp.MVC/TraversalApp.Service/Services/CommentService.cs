@@ -24,9 +24,19 @@ namespace TraversalApp.Service.Services
             return _commentRepository.GetListByFilter(x=>x.DestinationId == id);
         }
 
+        public List<Comment> GetListCommentWithAppUser(int id)
+        {
+            return _commentRepository.GetListCommentWithAppUser(id);
+        }
+
         public IQueryable<Comment> GetListCommentWithDestination()
         {
             return _commentRepository.GetListCommentWithDestination();
+        }
+
+        public IQueryable<Comment> GetListCommentWithDestination(int id)
+        {
+            return _commentRepository.GetListCommentWithDestination(id);
         }
     }
 }

@@ -1,0 +1,72 @@
+2023-04-09T22:00:04.2037097+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-09T22:00:04.2109508+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-04-09T22:00:04.2111098+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-04-09T22:00:47.6809085+03:00 40000003-000c-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("44"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[ConfirmPassword], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-04-09T22:00:47.8746562+03:00 40000003-000c-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2023-04-09T22:00:47.9024916+03:00 40000003-000c-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2023-04-09T22:00:47.9404263+03:00 40000020-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[ConfirmPassword], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-04-09T22:01:00.1288419+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-09T22:01:00.1336210+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-04-09T22:01:00.1337596+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-04-09T22:01:01.1320927+03:00 40000006-0009-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("26"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[ConfirmPassword], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-04-09T23:18:45.6526932+03:00  [INF] Now listening on: "http://localhost:5236" (d826f4b8)
+2023-04-09T23:18:45.6587461+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-09T23:18:45.6589342+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-04-09T23:18:45.6589504+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-04-09T23:18:45.9391217+03:00 0HMPP6UFGPSIJ:00000001 [WRN] Failed to determine the https port for redirect. (ca76cc21)
+2023-04-09T23:19:12.3129293+03:00  [INF] Now listening on: "http://localhost:5236" (d826f4b8)
+2023-04-09T23:19:12.3184362+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-09T23:19:12.3186471+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-04-09T23:19:12.3186649+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-04-09T23:19:18.5314671+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-09T23:19:18.5367547+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-04-09T23:19:18.5368898+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-04-09T23:19:27.6908078+03:00 40000002-000a-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("44"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[ConfirmPassword], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-04-09T23:19:27.8802122+03:00 40000002-000a-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2023-04-09T23:19:27.8997612+03:00 40000002-000a-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2023-04-09T23:19:27.9332624+03:00 40000004-0008-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[ConfirmPassword], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-04-09T23:19:32.8564232+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-09T23:19:32.8621228+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-04-09T23:19:32.8623048+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-04-09T23:19:33.8834576+03:00 40000008-0004-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("26"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[ConfirmPassword], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-04-09T23:45:49.1095226+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-09T23:45:49.1152969+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-04-09T23:45:49.1154614+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-04-09T23:45:55.2808016+03:00 40000012-0004-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[ConfirmPassword], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]" (0723d8ff)
+2023-04-09T23:46:15.3647245+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-09T23:46:15.3693019+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-04-09T23:46:15.3695000+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)

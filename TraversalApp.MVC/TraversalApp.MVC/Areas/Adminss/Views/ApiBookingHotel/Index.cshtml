@@ -1,0 +1,32 @@
+﻿@model IEnumerable<TraversalApp.Core.DTOs.APIsDTO.ApiBookingHotelDto.Result>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int count =0;
+}
+
+<h1>Api Booking Otel Rezervasyon Bilgi Ekanı</h1>
+<br />
+<h3>Aranılan Konum : Paris/Fransa</h3>
+
+<table class="table table-borderless">
+    <tr>
+        <th>#</th>
+        <th>Otel Adı</th>
+        <th>Otel Puanı</th>
+        <th>Otel Değerlendirmesi</th>
+        <th>Detaylar</th>
+    </tr>
+    @foreach(var item in Model)
+            {
+        count++;
+                <tr>
+                    <td>@count</td>
+                    <td>@item.hotel_name</td>
+                    <td>@item.review_score</td>
+                    <td>@item.review_score_word</td>
+                    <td><a href="#" class="btn btn-outline-info">Detaylar</a></td>
+                </tr>
+            }
+</table>

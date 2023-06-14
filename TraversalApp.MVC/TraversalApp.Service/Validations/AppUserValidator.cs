@@ -23,4 +23,3 @@ namespace TraversalApp.Service.Validations
         }
     }
 }
-//compare password ??   RuleFor(customer => customer.Password).Equal(customer => customer.PasswordConfirmation);

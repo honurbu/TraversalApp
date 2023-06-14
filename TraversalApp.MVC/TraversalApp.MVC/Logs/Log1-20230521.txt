@@ -1,0 +1,188 @@
+2023-05-21T00:07:15.9364506+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T00:07:15.9525355+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T00:07:15.9536262+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T00:07:19.2524756+03:00 40000027-0001-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("38"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity] AS [Capacities], [d].[City] AS [Cities], [d].[DayNight] AS [DayNights], [d].[Price] AS [Prices]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-21T23:31:42.2553567+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:31:42.2635645+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:31:42.2637637+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:31:43.9605711+03:00 40000006-0004-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:32:37.3402257+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:32:37.3474636+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:32:37.3480089+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:32:39.1477524+03:00 40000005-0007-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("38"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:32:39.1478148+03:00 40000009-0003-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("37"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:33:00.9267958+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:33:00.9350928+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:33:00.9355166+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:33:02.0385804+03:00 40000009-0001-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:33:18.8783553+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:33:18.8871700+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:33:18.8876694+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:33:20.4191387+03:00 40000004-0001-f800-b63f-84710c7967bb [INF] Executed DbCommand ("34"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:33:30.4324902+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:33:30.4401199+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:33:30.4403826+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:33:31.9866399+03:00 40000006-0000-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("29"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:33:46.5746170+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:33:46.5832320+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:33:46.5836317+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:33:48.1281832+03:00 4000001f-0004-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:34:04.7800597+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:34:04.7872951+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:34:04.7875397+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:34:06.3973842+03:00 40000004-0002-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:34:54.0930586+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:34:54.1020668+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:34:54.1024345+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:34:55.6232922+03:00 40000011-0004-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:36:35.3826905+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:36:35.3909008+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:36:35.3911101+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:36:36.8573978+03:00 40000012-0001-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:36:43.7309629+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:36:43.7372452+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:36:43.7374621+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:36:44.9047396+03:00 40000027-0008-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:37:08.8366508+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:37:08.8471333+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:37:08.8474664+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:37:10.4197864+03:00 40000013-0002-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:37:38.2657151+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:37:38.2730719+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:37:38.2733365+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:37:39.7117664+03:00 40000014-0007-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("34"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:38:57.4856230+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:38:57.4942171+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:38:57.4948619+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:38:59.1298443+03:00 4000000a-0008-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("41"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:39:40.3616824+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:39:40.3691383+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:39:40.3694887+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:39:41.6215554+03:00 40000004-0003-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:40:15.4667596+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:40:15.4754107+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:40:15.4756786+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:40:17.1129341+03:00 40000018-0007-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("45"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:40:26.7529445+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:40:26.7605917+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:40:26.7609203+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:40:27.9195155+03:00 4000004a-0008-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:40:50.4756620+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:40:50.4835040+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:40:50.4838090+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:40:52.0735262+03:00 4000000e-0007-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("65"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:41:10.7085789+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:41:10.7174022+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:41:10.7177570+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:41:12.0896333+03:00 4000002d-0004-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("30"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:44:12.4370307+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:44:12.4422145+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:44:12.4424086+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:44:14.2405465+03:00 4000002b-0006-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("73"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:45:10.4795830+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:45:10.4860512+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:45:10.4868154+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:45:11.9292653+03:00 40000006-0003-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:45:19.2428032+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:45:19.2492232+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:45:19.2495169+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:45:20.4406003+03:00 4000000c-0001-f900-b63f-84710c7967bb [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:45:36.2375889+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:45:36.2431619+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:45:36.2435488+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:45:37.7042964+03:00 40000022-0002-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:48:41.9387531+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:48:41.9466974+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:48:41.9469710+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:48:43.7582164+03:00 40000024-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("31"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:48:49.0063663+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:48:49.0115434+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:48:49.0117578+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:48:50.1519235+03:00 40000022-0003-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("27"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:51:33.5536103+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:51:33.5621427+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:51:33.5624661+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:51:35.1850511+03:00 40000028-000a-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("60"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:51:38.2788594+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:51:38.2852093+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:51:38.2857641+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:51:39.6466811+03:00 4000002e-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("26"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:51:40.0683622+03:00 40000029-0004-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:52:36.5716939+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:52:36.5766684+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:52:36.5768658+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:52:38.6062820+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:52:38.6108602+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:52:38.6110631+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:52:39.5373358+03:00 4000000d-000c-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-21T23:52:54.4403692+03:00 4000004c-0000-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("15"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [g].[Id], [g].[Description], [g].[Image], [g].[InstagramURL], [g].[Name], [g].[Status], [g].[TwitterURL]
+FROM [Guides] AS [g]
+WHERE [g].[Id] = @__p_0" (0723d8ff)
+2023-05-21T23:54:04.1483404+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-21T23:54:04.1531329+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-21T23:54:04.1533286+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-21T23:54:05.1329602+03:00 40000010-000d-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("27"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [g].[Id], [g].[Description], [g].[Image], [g].[InstagramURL], [g].[Name], [g].[Status], [g].[TwitterURL]
+FROM [Guides] AS [g]
+WHERE [g].[Id] = @__p_0" (0723d8ff)

@@ -1,16 +1,20 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using FluentValidation;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TraversalApp.Core.DTOs;
+using TraversalApp.Core.Entites;
 using TraversalApp.Core.Repositories;
 using TraversalApp.Core.Services;
 using TraversalApp.Core.UnitOfWorks;
 using TraversalApp.Repository.Repositories;
 using TraversalApp.Repository.UnitOfWorks;
 using TraversalApp.Service.Services;
+using TraversalApp.Service.Validations;
 
 namespace TraversalApp.Service.Container
 {
@@ -31,6 +35,9 @@ namespace TraversalApp.Service.Container
             builder.AddScoped(typeof(IAppUserRepository), typeof(AppUserRepository));
             builder.AddScoped(typeof(IReservationRepository), typeof(ReservationRepository));
             builder.AddScoped(typeof(IGuideRepository), typeof(GuideRepository));
+            builder.AddScoped(typeof(IContactUsRepository), typeof(ContactUsRepository));
+            builder.AddScoped(typeof(IAnnouncementRepository), typeof(AnnouncementRepository));
+
 
             // Service Layer Dependency Injection
             //builder.Services.AddScoped(typeof(IGenericService<TEntity, TDto>), typeof(GenericService<>));
@@ -42,9 +49,24 @@ namespace TraversalApp.Service.Container
             builder.AddScoped(typeof(IAppUserService), typeof(AppUserService));
             builder.AddScoped(typeof(IReservationService), typeof(ReservationService));
             builder.AddScoped(typeof(IGuideService), typeof(GuideService));
+            builder.AddScoped(typeof(IContactUsService), typeof(ContactUsService));
             builder.AddScoped(typeof(IExcelService), typeof(ExcelService));
+            builder.AddScoped(typeof(IAnnouncementService), typeof(AnnouncementService));
 
 
         }
+
+
+
+        public static void CustomValidator(this IServiceCollection builder)
+        {
+            builder.AddSingleton<IValidator<AppUserDto>, AppUserValidator>();
+            builder.AddSingleton<IValidator<Guide>, GuideValidator>();
+            builder.AddSingleton<IValidator<About>, AboutValidator>();
+            builder.AddSingleton<IValidator<AnnouncementDto>, AnnouncementValidator>();
+
+        }
+
+
     }
 }

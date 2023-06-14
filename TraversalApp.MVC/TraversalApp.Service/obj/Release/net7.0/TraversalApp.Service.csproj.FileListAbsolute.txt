@@ -1,0 +1,17 @@
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Service\bin\Release\net7.0\TraversalApp.Service.deps.json
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Service\bin\Release\net7.0\TraversalApp.Service.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Service\bin\Release\net7.0\TraversalApp.Service.pdb
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Service\bin\Release\net7.0\TraversalApp.Core.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Service\bin\Release\net7.0\TraversalApp.Repository.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Service\bin\Release\net7.0\TraversalApp.Repository.pdb
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Service\bin\Release\net7.0\TraversalApp.Core.pdb
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Service\obj\Release\net7.0\TraversalApp.Service.csproj.AssemblyReference.cache
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Service\obj\Release\net7.0\TraversalApp.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Service\obj\Release\net7.0\TraversalApp.Service.AssemblyInfoInputs.cache
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Service\obj\Release\net7.0\TraversalApp.Service.AssemblyInfo.cs
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Service\obj\Release\net7.0\TraversalApp.Service.csproj.CoreCompileInputs.cache
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Service\obj\Release\net7.0\TraversalApp.Service.csproj.CopyComplete
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Service\obj\Release\net7.0\TraversalApp.Service.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Service\obj\Release\net7.0\refint\TraversalApp.Service.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Service\obj\Release\net7.0\TraversalApp.Service.pdb
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Service\obj\Release\net7.0\ref\TraversalApp.Service.dll

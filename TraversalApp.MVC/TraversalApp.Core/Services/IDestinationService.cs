@@ -9,5 +9,7 @@ namespace TraversalApp.Core.Services
 {
     public interface IDestinationService : IGenericService<Destination>
     {
+        Destination GetDestinationsWithGuide(int id);
+
     }
 }

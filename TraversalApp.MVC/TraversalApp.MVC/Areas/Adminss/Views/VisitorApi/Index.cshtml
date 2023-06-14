@@ -1,0 +1,36 @@
+﻿@model List<TraversalApp.Core.DTOs.VisitorApiDto>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Api Ziyaretçi Listesi</h1>
+<br />
+
+<table class="table table-borderless">
+    <tr>
+        <th>#</th>
+        <th>Ad</th>
+        <th>Soyad</th>
+        <th>Şehir</th>
+        <th>Ülke</th>
+        <th>Mail</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach(var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+                    <td>@item.Surname</td>
+                    <td>@item.City</td>
+                    <td>@item.Country</td>
+                    <td>@item.Mail</td>
+                    <td><a href="/Adminss/VisitorApi/DeleteVisitor/@item.Id" class="btn btn-outline-danger"> Sil </a></td>
+                    <td><a href="/Adminss/VisitorApi/UpdateVisitor/@item.Id" class="btn btn-outline-warning"> Güncelle </a></td>
+                </tr>
+            }
+</table>
+
+<a href="/Adminss/VisitorApi/AddVisitor/" class="btn btn-danger"> Yeni Ziyaretçi Ekle </a>

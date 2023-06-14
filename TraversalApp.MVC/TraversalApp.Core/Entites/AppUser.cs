@@ -13,9 +13,12 @@ namespace TraversalApp.Core.Entites
         public string Name { get; set; }
         public string Surname { get; set; }
         public string? Gender { get; set; }
-        public string ConfirmPassword { get; set; }
+        //public string ConfirmPassword { get; set; }
 
         //Relations
         public ICollection<Reservation> Reservations { get; set; }
+        // public List<Comment> Comments { get; set; }
+        public List<Comment> Comments { get; set; }
+
     }
 }

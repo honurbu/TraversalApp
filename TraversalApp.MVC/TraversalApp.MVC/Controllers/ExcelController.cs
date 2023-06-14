@@ -31,7 +31,7 @@ namespace TraversalApp.MVC.Controllers
                 City = x.City,
                 DayNight = x.DayNight,
                 Price = x.Price,
-                Capacity = x.Capacity
+                Capacity = (int)x.Capacity
             }).ToList();
             
             return destinationModels;

@@ -1,0 +1,33 @@
+﻿@model List<GetAllDestinationQueryResult>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>CQRS Tur Verileri</h1>
+
+<table class="table table-borderless">
+    <tr>
+        <th>#</th>
+        <th>Şehir Bilgisi</th>
+        <th>Gece Gündüz Konaklama Bilgisi</th>
+        <th>Ücret Bilgilendirmesi</th>
+        <th>Kapasite</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Cities</td>
+            <td>@item.DayNights</td>
+            <td>@item.Prices $</td>
+            <td>@item.Capacities</td>
+            <td><a href="/Adminss/DestinationCQRS/DeleteDestination/@item.Id" class="btn btn-outline-warning">Sil</a></td>
+            <td><a href="/Adminss/DestinationCQRS/GetDestinationByID/@item.Id" class="btn btn-outline-info">Güncelle</a></td>
+        </tr>
+    }
+</table>
+<a href="/Adminss/DestinationCQRS/AddDestination/" class="btn btn-outline-success">Yeni Tur Ekle</a>
+     

@@ -1,0 +1,14 @@
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Core\bin\Release\net7.0\TraversalApp.Core.deps.json
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Core\bin\Release\net7.0\TraversalApp.Core.runtimeconfig.json
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Core\bin\Release\net7.0\TraversalApp.Core.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Core\bin\Release\net7.0\TraversalApp.Core.pdb
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Core\obj\Release\net7.0\TraversalApp.Core.csproj.AssemblyReference.cache
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Core\obj\Release\net7.0\TraversalApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Core\obj\Release\net7.0\TraversalApp.Core.AssemblyInfoInputs.cache
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Core\obj\Release\net7.0\TraversalApp.Core.AssemblyInfo.cs
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Core\obj\Release\net7.0\TraversalApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Core\obj\Release\net7.0\TraversalApp.Core.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Core\obj\Release\net7.0\refint\TraversalApp.Core.dll
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Core\obj\Release\net7.0\TraversalApp.Core.pdb
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Core\obj\Release\net7.0\TraversalApp.Core.genruntimeconfig.cache
+C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.Core\obj\Release\net7.0\ref\TraversalApp.Core.dll

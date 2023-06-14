@@ -190,6 +190,30 @@ namespace TraversalApp.Repository.Migrations
                     b.ToTable("Abouts2");
                 });
 
+            modelBuilder.Entity("TraversalApp.Core.Entites.Announcement", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("AnnouncementDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Announcements");
+                });
+
             modelBuilder.Entity("TraversalApp.Core.Entites.AppRole", b =>
                 {
                     b.Property<int>("Id")
@@ -233,10 +257,6 @@ namespace TraversalApp.Repository.Migrations
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ConfirmPassword")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
@@ -314,6 +334,9 @@ namespace TraversalApp.Repository.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("AppUserID")
+                        .HasColumnType("int");
+
                     b.Property<string>("CommentContent")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -332,6 +355,8 @@ namespace TraversalApp.Repository.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("AppUserID");
 
                     b.HasIndex("DestinationId");
 
@@ -374,6 +399,41 @@ namespace TraversalApp.Repository.Migrations
                     b.ToTable("Contacts");
                 });
 
+            modelBuilder.Entity("TraversalApp.Core.Entites.ContactUs", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Mail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("MessageDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Subject")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ContactUses");
+                });
+
             modelBuilder.Entity("TraversalApp.Core.Entites.Destination", b =>
                 {
                     b.Property<int>("Id")
@@ -382,31 +442,31 @@ namespace TraversalApp.Repository.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("Capacity")
+                    b.Property<int?>("Capacity")
                         .HasColumnType("int");
 
                     b.Property<string>("City")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ContentImage")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CoverImage")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("DayNight")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("GuideId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Image")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Maxim")
@@ -415,25 +475,24 @@ namespace TraversalApp.Repository.Migrations
                     b.Property<string>("MaximAuthor")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("MaximStatus")
+                    b.Property<bool?>("MaximStatus")
                         .HasColumnType("bit");
 
                     b.Property<string>("Price")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("Status")
+                    b.Property<bool?>("Status")
                         .HasColumnType("bit");
 
                     b.Property<string>("SubDetails")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TopDetails")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("GuideId");
 
                     b.ToTable("Destinations");
                 });
@@ -676,13 +735,30 @@ namespace TraversalApp.Repository.Migrations
 
             modelBuilder.Entity("TraversalApp.Core.Entites.Comment", b =>
                 {
+                    b.HasOne("TraversalApp.Core.Entites.AppUser", "AppUser")
+                        .WithMany("Comments")
+                        .HasForeignKey("AppUserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("TraversalApp.Core.Entites.Destination", "Destination")
                         .WithMany("Comments")
                         .HasForeignKey("DestinationId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.Navigation("AppUser");
+
                     b.Navigation("Destination");
+                });
+
+            modelBuilder.Entity("TraversalApp.Core.Entites.Destination", b =>
+                {
+                    b.HasOne("TraversalApp.Core.Entites.Guide", "Guide")
+                        .WithMany("Destinations")
+                        .HasForeignKey("GuideId");
+
+                    b.Navigation("Guide");
                 });
 
             modelBuilder.Entity("TraversalApp.Core.Entites.Reservation", b =>
@@ -714,6 +790,8 @@ namespace TraversalApp.Repository.Migrations
 
             modelBuilder.Entity("TraversalApp.Core.Entites.AppUser", b =>
                 {
+                    b.Navigation("Comments");
+
                     b.Navigation("Reservations");
                 });
 
@@ -722,6 +800,11 @@ namespace TraversalApp.Repository.Migrations
                     b.Navigation("Comments");
 
                     b.Navigation("Reservations");
+                });
+
+            modelBuilder.Entity("TraversalApp.Core.Entites.Guide", b =>
+                {
+                    b.Navigation("Destinations");
                 });
 
             modelBuilder.Entity("TraversalApp.Core.Entites.RStatus", b =>

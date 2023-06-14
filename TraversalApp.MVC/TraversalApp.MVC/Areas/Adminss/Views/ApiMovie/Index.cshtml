@@ -1,0 +1,33 @@
+﻿@model List<TraversalApp.Core.DTOs.APIsDTO.ApiMovieDto> 
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>API IMDB Top 100 Movies</h1>
+
+<br />
+
+<table class="table table-borderless">
+    <tr>
+        <th>Film Sırası</th>
+        <th>Film Adı</th>
+        <th>Film IMDB Puanı</th>
+        <th>Film Yılı</th>
+        <th>Film Resmi</th>
+        <th>Film Fragman</th>
+    </tr>
+    @foreach(var item in Model)
+            {
+                <tr>
+                    <td>@item.rank</td>
+                    <td>@item.title</td>
+                    <td>@item.rating</td>
+                    <td>@item.year</td>
+                    <td><img src="@item.image" class="img-circle img-responsive" width="125" height="125"/></td>
+                    <td><a href="@item.trailer" class="btn btn-outline-info">Fragmanı İzle</a></td>
+                </tr>
+            }
+
+</table>

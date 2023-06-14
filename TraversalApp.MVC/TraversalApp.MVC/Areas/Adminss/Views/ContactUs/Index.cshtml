@@ -1,0 +1,48 @@
+﻿@using TraversalApp.Core.Entites
+@model List<ContactUs>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1> Misafir Mesajları </h1>
+<table class="table table-borderless">
+
+    <tr>
+        <th>#</th>
+        <th>Ad-Soyad</th>
+        <th>Mail Adresi</th>
+        <th>Konu</th>
+        <th>İçerik</th>
+        <th>Tarih</th>
+        <th>Durumu</th>
+        <th>Görünütle</th>
+        <th>Sil</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@item.Id</th>
+            <th>@item.Name</th>
+            <th>@item.Mail</th>
+            <th>@item.Subject</th>
+            <th>@item.Content</th>
+            <th>@item.MessageDate</th>
+            @if (item.Status == true)
+            {
+                <th><a href="/Adminss/ContactUs/ContactUsStatusChangeToFalse/@item.Id" class="btn btn-outline-warning"> Pasifleştir </a></th>
+
+            }
+            else
+            {
+                <th><a href="/Adminss/ContactUs/ContactUsStatusChangeToTrue/@item.Id" class="btn btn-outline-info"> Aktifleştir </a></th>
+            }
+
+            <th><a href="#" class="btn btn-outline-success"> Görüntüle </a></th>
+            <th><a href="/Adminss/ContactUs/DeleteMessage/@item.Id" class="btn btn-outline-danger"> Sil </a></th>
+        </tr>
+    }
+
+</table>

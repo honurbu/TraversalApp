@@ -1,0 +1,63 @@
+2023-05-23T20:18:50.2805243+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-23T20:18:50.2895863+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-23T20:18:50.2900064+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-23T20:18:52.0356946+03:00 40000002-000c-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("36"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-23T20:18:52.2128998+03:00 40000002-000c-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-23T20:18:52.2237067+03:00 40000002-000c-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-23T20:18:52.2591468+03:00 40000002-000c-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[Description], [f].[Image], [f].[IsBigArea], [f].[Status], [f].[Title]
+FROM [Features] AS [f]" (0723d8ff)
+2023-05-23T20:18:52.2824237+03:00 40000002-000c-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Description], [s].[Title]
+FROM [SubAbouts] AS [s]" (0723d8ff)
+2023-05-23T20:18:52.3080892+03:00 40000002-000c-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Client], [t].[ClientImage], [t].[Comment], [t].[Status]
+FROM [Testimonials] AS [t]" (0723d8ff)
+2023-05-23T20:47:41.4682590+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-23T20:47:41.4737324+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-23T20:47:41.4739494+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-23T20:47:42.4650118+03:00 40000008-0005-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-23T20:47:42.5678257+03:00 40000008-0005-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-23T20:47:42.5770008+03:00 40000008-0005-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-23T20:47:42.5960174+03:00 40000008-0005-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[Description], [f].[Image], [f].[IsBigArea], [f].[Status], [f].[Title]
+FROM [Features] AS [f]" (0723d8ff)
+2023-05-23T20:47:42.6089479+03:00 40000008-0005-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Description], [s].[Title]
+FROM [SubAbouts] AS [s]" (0723d8ff)
+2023-05-23T20:47:42.6179931+03:00 40000008-0005-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Client], [t].[ClientImage], [t].[Comment], [t].[Status]
+FROM [Testimonials] AS [t]" (0723d8ff)
+2023-05-23T20:53:02.7622576+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-23T20:53:02.7730300+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-23T20:53:02.7734892+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-23T20:53:04.4939222+03:00 40000004-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("41"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-23T20:53:04.6514109+03:00 40000004-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-23T20:53:04.6610686+03:00 40000004-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-23T20:53:04.6918971+03:00 40000004-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[Description], [f].[Image], [f].[IsBigArea], [f].[Status], [f].[Title]
+FROM [Features] AS [f]" (0723d8ff)
+2023-05-23T20:53:05.0186561+03:00 40000004-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Description], [s].[Title]
+FROM [SubAbouts] AS [s]" (0723d8ff)
+2023-05-23T20:53:05.0469328+03:00 40000004-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Client], [t].[ClientImage], [t].[Comment], [t].[Status]
+FROM [Testimonials] AS [t]" (0723d8ff)

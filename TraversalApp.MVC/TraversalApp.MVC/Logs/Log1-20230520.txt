@@ -1,0 +1,152 @@
+2023-05-20T22:40:53.3465630+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-20T22:40:53.3530161+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-20T22:40:53.3531957+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-20T22:40:55.2731548+03:00 40000004-000e-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("32"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity] AS [Capacities], [d].[City] AS [Cities], [d].[DayNight] AS [Dayights], [d].[Price] AS [Prices]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-20T22:41:26.8568410+03:00 40000002-0006-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("48"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = Boolean), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Destinations] ([Capacity], [City], [ContentImage], [CoverImage], [DayNight], [Description], [Image], [Maxim], [MaximAuthor], [MaximStatus], [Price], [Status], [SubDetails], [TopDetails])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13);" (0723d8ff)
+2023-05-20T22:41:30.6408712+03:00 40000004-0002-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity] AS [Capacities], [d].[City] AS [Cities], [d].[DayNight] AS [Dayights], [d].[Price] AS [Prices]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-20T22:41:32.6746863+03:00 40000006-0004-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-20T22:41:34.9711681+03:00 40000004-0000-fc00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at lambda_method233(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-05-20T22:56:39.0292012+03:00 40000018-0005-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-20T23:00:59.9144307+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-20T23:00:59.9235696+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-20T23:00:59.9237717+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-20T23:01:01.1260493+03:00 40000002-000f-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity] AS [Capacities], [d].[City] AS [Cities], [d].[DayNight] AS [DayNights], [d].[Price] AS [Prices]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-20T23:01:02.7278124+03:00 4000001c-0005-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("11"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-20T23:01:04.8083871+03:00 40000006-0003-fe00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at lambda_method158(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-05-20T23:01:06.2427761+03:00 40000005-0000-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-20T23:02:27.8892720+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-20T23:02:27.8964552+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-20T23:02:27.8967988+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-20T23:02:29.0884138+03:00 40000005-000c-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity] AS [Capacities], [d].[City] AS [Cities], [d].[DayNight] AS [DayNights], [d].[Price] AS [Prices]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-20T23:02:30.9693890+03:00 40000011-0004-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("13"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-20T23:02:33.4712132+03:00 4000000e-0006-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-20T23:02:33.5870783+03:00 4000000e-0006-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("39"ms) [Parameters=["@p1='?' (DbType = Int32), @p0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Destinations] SET [Price] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;" (0723d8ff)
+2023-05-20T23:02:34.7779071+03:00 40000027-0002-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-20T23:02:36.8799786+03:00 40000006-000a-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity] AS [Capacities], [d].[City] AS [Cities], [d].[DayNight] AS [DayNights], [d].[Price] AS [Prices]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-20T23:02:39.7662092+03:00 40000007-0002-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity] AS [Capacities], [d].[City] AS [Cities], [d].[DayNight] AS [DayNights], [d].[Price] AS [Prices]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-20T23:02:41.9108662+03:00 40000014-0003-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-20T23:02:44.6425781+03:00 4000000e-0008-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-20T23:02:46.8788674+03:00 40000026-0005-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-20T23:02:46.8842992+03:00 40000026-0005-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@p1='?' (DbType = Int32), @p0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Destinations] SET [DayNight] = @p0
+OUTPUT 1
+WHERE [Id] = @p1;" (0723d8ff)
+2023-05-20T23:02:47.7819815+03:00 4000001d-0000-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-20T23:02:50.4248899+03:00 40000014-0001-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity] AS [Capacities], [d].[City] AS [Cities], [d].[DayNight] AS [DayNights], [d].[Price] AS [Prices]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-20T23:03:15.1749591+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-20T23:03:15.1800510+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-20T23:03:15.1801997+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-20T23:03:16.2503222+03:00 40000021-0000-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity] AS [Capacities], [d].[City] AS [Cities], [d].[DayNight] AS [DayNights], [d].[Price] AS [Prices]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-20T23:03:22.6739756+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-20T23:03:22.6815824+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-20T23:03:22.6817355+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-20T23:03:23.8127455+03:00 40000002-0001-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity] AS [Capacities], [d].[City] AS [Cities], [d].[DayNight] AS [DayNights], [d].[Price] AS [Prices]
+FROM [Destinations] AS [d]" (0723d8ff)

@@ -36,7 +36,7 @@ namespace TraversalApp.MVC.Areas.Adminss.Controllers
         {
             GuideValidator guides = new GuideValidator();
             ValidationResult result = guides.Validate(guide);
-                    
+
             if (result.IsValid)
             {
                 await _guideService.AddAsync(guide);
@@ -44,7 +44,7 @@ namespace TraversalApp.MVC.Areas.Adminss.Controllers
             }
             else
             {
-                foreach(var item in result.Errors)
+                foreach (var item in result.Errors)
                 {
                     ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
                 }

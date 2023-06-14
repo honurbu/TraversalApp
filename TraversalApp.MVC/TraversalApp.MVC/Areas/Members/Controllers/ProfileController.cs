@@ -57,7 +57,7 @@ namespace TraversalApp.MVC.Areas.Members.Controllers
             user.UserName = userEditDto.UserName;
             user.Email = userEditDto.Email;
             user.PhoneNumber = userEditDto.PhoneNumber;
-            user.ConfirmPassword = userEditDto.ConfirmPassword;
+            //user.ConfirmPassword = userEditDto.ConfirmPassword;
             user.PasswordHash = _userManager.PasswordHasher.HashPassword(user, userEditDto.Password);
 
            

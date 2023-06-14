@@ -1,0 +1,21 @@
+﻿@model IEnumerable<TraversalApp.Core.DTOs.APIsDTO.ApiBookingExchangeDto.Exchange_Rates>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Api Booking Kur Bilgileri</h1>
+<br />
+<table class="table table-borderless">
+    <tr>
+        <th>Kur Adı</th>
+        <th>Kur Oranı</th>
+    </tr>
+    @foreach(var item in Model)
+            {
+                <tr>
+                    <th>@item.currency</th>
+                    <td>@item.exchange_rate_buy</td>
+                </tr>
+            }
+</table>

@@ -9,5 +9,6 @@ namespace TraversalApp.Core.Repositories
 {
     public interface IDestinationRepository : IGenericRepository<Destination>
     {
+        Destination GetDestinationsWithGuide(int id);
     }
 }

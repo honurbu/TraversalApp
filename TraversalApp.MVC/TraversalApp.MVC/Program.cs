@@ -18,6 +18,9 @@ using TraversalApp.Service.Services;
 using TraversalApp.Core.DTOs;
 using TraversalApp.Service.Validations;
 using TraversalApp.Service.Container;
+using TraversalApp.MVC.CQRS.Handlers.DestinationHandlers;
+using MediatR;
+using DocumentFormat.OpenXml.Office2016.Drawing.ChartDrawing;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,17 +30,32 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 // Repository Layer Dependency Injection
 // Service Layer Dependency Injection
+
+builder.Services.AddHttpClient();
 builder.Services.ContainerDependencies();
 
 
 builder.Services.AddAutoMapper(typeof(MapProfile));
 
 
-builder.Services.AddSingleton<IValidator<AppUserDto>, AppUserValidator>();
+builder.Services.CustomValidator();
+
 builder.Services.AddControllersWithViews().AddFluentValidation(options =>
 {
     options.RegisterValidatorsFromAssemblyContaining<Program>();
 });
+
+builder.Services.AddScoped<GetAllDestinationQueryHandler>();
+builder.Services.AddScoped<GetDestinationByIDQueryHandler>();
+builder.Services.AddScoped<CreateDestinationCommandHandler>();
+builder.Services.AddScoped<RemoveDestinationCommandHandler>();
+builder.Services.AddScoped<UpdateDestinationCommandHandler>();
+
+//builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
+builder.Services.AddMediatR(x => x.RegisterServicesFromAssemblies(typeof(LibraryEntrypoint).Assembly));
+
+//builder.Services.AddMediatR(typeof(Program));
+//builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
 
 builder.Services.AddLogging(x=>
 {
@@ -60,7 +78,7 @@ builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<AppDbC
 
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews().AddFluentValidation();
 builder.Services.AddMvc(config =>
     {
         var policy = new AuthorizationPolicyBuilder()

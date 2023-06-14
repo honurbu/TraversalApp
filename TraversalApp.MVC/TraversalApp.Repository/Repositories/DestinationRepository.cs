@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,11 @@ namespace TraversalApp.Repository.Repositories
     {
         public DestinationRepository(AppDbContext context) : base(context)
         {
+        }
+
+        public Destination GetDestinationsWithGuide(int id)
+        {
+            return _context.Destinations.Where(x => x.Id == id).Include(x => x.Guide).FirstOrDefault();
         }
     }
 }

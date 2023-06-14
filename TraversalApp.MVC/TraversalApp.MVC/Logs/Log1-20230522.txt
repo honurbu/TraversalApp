@@ -1,0 +1,21 @@
+2023-05-22T00:26:34.6559295+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-22T00:26:34.6624233+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-22T00:26:34.6626651+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-22T00:26:35.8487976+03:00 40000013-000c-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-22T00:26:42.7750397+03:00 4000001b-000c-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("18"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = Boolean), @p5='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Guides] ([Description], [Image], [InstagramURL], [Name], [Status], [TwitterURL])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);" (0723d8ff)
+2023-05-22T00:26:45.4969307+03:00 4000001a-0006-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-22T00:39:43.4623670+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-22T00:39:43.4671583+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-22T00:39:43.4672811+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-22T00:39:44.2968623+03:00 40000036-0008-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[Name]
+FROM [Guides] AS [g]" (0723d8ff)

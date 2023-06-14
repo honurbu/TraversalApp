@@ -1,0 +1,385 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TraversalApp.MVC
+build_property.RootNamespace = TraversalApp.MVC
+build_property.ProjectDir = C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Adminss/Views/Announcement/AddAnnouncement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zc1xWaWV3c1xBbm5vdW5jZW1lbnRcQWRkQW5ub3VuY2VtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Adminss/Views/Announcement/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zc1xWaWV3c1xBbm5vdW5jZW1lbnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Adminss/Views/Announcement/UpdateAnnouncement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zc1xWaWV3c1xBbm5vdW5jZW1lbnRcVXBkYXRlQW5ub3VuY2VtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Adminss/Views/ApiBookingHotel/GetCityDestinationId.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zc1xWaWV3c1xBcGlCb29raW5nSG90ZWxcR2V0Q2l0eURlc3RpbmF0aW9uSWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Adminss/Views/ApiBookingHotel/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zc1xWaWV3c1xBcGlCb29raW5nSG90ZWxcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Adminss/Views/ApiExchange/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zc1xWaWV3c1xBcGlFeGNoYW5nZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Adminss/Views/ApiMovie/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zc1xWaWV3c1xBcGlNb3ZpZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Adminss/Views/Comment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zc1xWaWV3c1xDb21tZW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Adminss/Views/ContactUs/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zc1xWaWV3c1xDb250YWN0VXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Adminss/Views/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zc1xWaWV3c1xEYXNoYm9hcmRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Adminss/Views/DestinationCQRS/AddDestination.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zc1xWaWV3c1xEZXN0aW5hdGlvbkNRUlNcQWRkRGVzdGluYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Adminss/Views/DestinationCQRS/GetDestinationByID.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zc1xWaWV3c1xEZXN0aW5hdGlvbkNRUlNcR2V0RGVzdGluYXRpb25CeUlELmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Adminss/Views/DestinationCQRS/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zc1xWaWV3c1xEZXN0aW5hdGlvbkNRUlNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Adminss/Views/Destination/AddDestination.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zc1xWaWV3c1xEZXN0aW5hdGlvblxBZGREZXN0aW5hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Adminss/Views/Destination/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zc1xWaWV3c1xEZXN0aW5hdGlvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Adminss/Views/Destination/UpdateDestination.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zc1xWaWV3c1xEZXN0aW5hdGlvblxVcGRhdGVEZXN0aW5hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Adminss/Views/GuideMediatR/AddGuide.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zc1xWaWV3c1xHdWlkZU1lZGlhdFJcQWRkR3VpZGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Adminss/Views/GuideMediatR/GetGuideById.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zc1xWaWV3c1xHdWlkZU1lZGlhdFJcR2V0R3VpZGVCeUlkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Adminss/Views/GuideMediatR/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zc1xWaWV3c1xHdWlkZU1lZGlhdFJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Adminss/Views/Guide/AddGuide.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zc1xWaWV3c1xHdWlkZVxBZGRHdWlkZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Adminss/Views/Guide/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zc1xWaWV3c1xHdWlkZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Adminss/Views/Mail/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zc1xWaWV3c1xNYWlsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Adminss/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zc1xWaWV3c1xVc2Vyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Adminss/Views/Users/ReservationUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zc1xWaWV3c1xVc2Vyc1xSZXNlcnZhdGlvblVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Adminss/Views/VisitorApi/AddVisitor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zc1xWaWV3c1xWaXNpdG9yQXBpXEFkZFZpc2l0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Adminss/Views/VisitorApi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zc1xWaWV3c1xWaXNpdG9yQXBpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Adminss/Views/VisitorApi/UpdateVisitor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zc1xWaWV3c1xWaXNpdG9yQXBpXFVwZGF0ZVZpc2l0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Adminss/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5zc1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Members/Views/Comment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWVtYmVyc1xWaWV3c1xDb21tZW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Members/Views/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWVtYmVyc1xWaWV3c1xEYXNoYm9hcmRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Members/Views/Destination/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWVtYmVyc1xWaWV3c1xEZXN0aW5hdGlvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Members/Views/Profile/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWVtYmVyc1xWaWV3c1xQcm9maWxlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Members/Views/Reservation/ActiveReservation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWVtYmVyc1xWaWV3c1xSZXNlcnZhdGlvblxBY3RpdmVSZXNlcnZhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Members/Views/Reservation/ApprovalReservation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWVtYmVyc1xWaWV3c1xSZXNlcnZhdGlvblxBcHByb3ZhbFJlc2VydmF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Members/Views/Reservation/NewReservation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWVtYmVyc1xWaWV3c1xSZXNlcnZhdGlvblxOZXdSZXNlcnZhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Members/Views/Reservation/OldReservation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWVtYmVyc1xWaWV3c1xSZXNlcnZhdGlvblxPbGRSZXNlcnZhdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Areas/Members/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcTWVtYmVyc1xWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Admin/PartialAppBrandDemo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUGFydGlhbEFwcEJyYW5kRGVtby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Admin/PartialFooter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUGFydGlhbEZvb3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Admin/PartialHeader.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUGFydGlhbEhlYWRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Admin/PartialNavbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUGFydGlhbE5hdmJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Admin/PartialScript.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUGFydGlhbFNjcmlwdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Admin/PartialSideBar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUGFydGlhbFNpZGVCYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Comment/AddComment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxBZGRDb21tZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Default/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVmYXVsdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Destination/DestinationDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzdGluYXRpb25cRGVzdGluYXRpb25EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Destination/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVzdGluYXRpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/ErrorPage/Error404.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JQYWdlXEVycm9yNDA0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Excel/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhjZWxcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Guide/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3VpZGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Home/Test.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUZXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/LayoutPartial/_FooterPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF5b3V0UGFydGlhbFxfRm9vdGVyUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/LayoutPartial/_HeaderPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF5b3V0UGFydGlhbFxfSGVhZGVyUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/LayoutPartial/_NavbarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF5b3V0UGFydGlhbFxfTmF2YmFyUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/LayoutPartial/_ScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF5b3V0UGFydGlhbFxfU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Login/SignIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cU2lnbkluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Login/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cU2lnblVwLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/MemberLayoutPartial/_FooterPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyTGF5b3V0UGFydGlhbFxfRm9vdGVyUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/MemberLayoutPartial/_HeaderPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyTGF5b3V0UGFydGlhbFxfSGVhZGVyUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/MemberLayoutPartial/_Navbar2Partial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyTGF5b3V0UGFydGlhbFxfTmF2YmFyMlBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/MemberLayoutPartial/_NavBarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyTGF5b3V0UGFydGlhbFxfTmF2QmFyUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/MemberLayoutPartial/_RightbarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyTGF5b3V0UGFydGlhbFxfUmlnaHRiYXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/MemberLayoutPartial/_ScriptPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVtYmVyTGF5b3V0UGFydGlhbFxfU2NyaXB0UGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Shared/Components/_AdminDashboardHeader/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FkbWluRGFzaGJvYXJkSGVhZGVyXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Shared/Components/_AdminGuideList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0FkbWluR3VpZGVMaXN0XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Shared/Components/_Cards1Statistic/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0NhcmRzMVN0YXRpc3RpY1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Shared/Components/_Cards2Statistics/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0NhcmRzMlN0YXRpc3RpY3NcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Shared/Components/_CommentList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0NvbW1lbnRMaXN0XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Shared/Components/_DashboardBanner/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0Rhc2hib2FyZEJhbm5lclxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Shared/Components/_DestinationStatistic2/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0Rlc3RpbmF0aW9uU3RhdGlzdGljMlxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Shared/Components/_DestinationStatistic/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0Rlc3RpbmF0aW9uU3RhdGlzdGljXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Shared/Components/_FeaturePartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0ZlYXR1cmVQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Shared/Components/_GuideList/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX0d1aWRlTGlzdFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Shared/Components/_PlatformSettings/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1BsYXRmb3JtU2V0dGluZ3NcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Shared/Components/_PopulerDestinationPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1BvcHVsZXJEZXN0aW5hdGlvblBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Shared/Components/_ProfileInformation/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1Byb2ZpbGVJbmZvcm1hdGlvblxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Shared/Components/_SliderPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1NsaWRlclBhcnRpYWxcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Shared/Components/_StatisticsPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1N0YXRpc3RpY3NQYXJ0aWFsXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Shared/Components/_SubAboutPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1N1YkFib3V0UGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Shared/Components/_TestimonialPartial/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1Rlc3RpbW9uaWFsUGFydGlhbFxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Shared/Components/_TotalRevenue/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcX1RvdGFsUmV2ZW51ZVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Shared/_UILayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9VSUxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Shared/_UserLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Onur/Desktop/Windows Form Projelerim/TraversalApp.MVC/TraversalApp.MVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-rhedqfkqjp

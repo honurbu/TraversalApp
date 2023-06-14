@@ -43,7 +43,7 @@ namespace TraversalApp.MVC.Controllers
                     Surname = appUserDto.Surname,
                     Email = appUserDto.Email,
                     UserName = appUserDto.UserName,
-                    ConfirmPassword = appUserDto.ConfirmPassword,
+                    //ConfirmPassword = appUserDto.ConfirmPassword,
                 };
 
                 if (appUserDto.Password == appUserDto.ConfirmPassword)

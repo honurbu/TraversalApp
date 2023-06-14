@@ -1,0 +1,1607 @@
+2023-05-27T11:55:44.8129615+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T11:55:44.8248914+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T11:55:44.8251188+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T11:56:01.6132768+03:00 40000008-0000-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("89"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T11:56:01.9987283+03:00 40000008-0000-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("6"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2023-05-27T11:56:02.0360206+03:00 40000008-0000-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2023-05-27T11:56:02.1103646+03:00 4000000a-0000-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T11:56:14.5066923+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T11:56:14.5148744+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T11:56:14.5151110+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T11:56:15.7008908+03:00 40000004-0007-ff00-b63f-84710c7967bb [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page. (5302a7e1)
+2023-05-27T11:56:16.1459108+03:00 40000003-0002-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("42"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T11:56:22.4270790+03:00 40000008-0003-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("36"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T11:56:22.6832391+03:00 40000008-0003-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("8"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T11:56:22.7053413+03:00 40000008-0003-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId]
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T11:56:34.1767507+03:00 40000006-0005-fe00-b63f-84710c7967bb [ERR] Failed executing DbCommand ("53"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Comments] ([AppUserID], [CommentContent], [CommentDate], [CommentStatus], [CommentUser], [DestinationId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);" (627a98df)
+2023-05-27T11:56:34.2196767+03:00 40000005-0002-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-27T11:56:36.4195351+03:00 4000000c-0005-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T11:56:36.4274693+03:00 4000000c-0005-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T11:56:36.4295458+03:00 4000000c-0005-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId]
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T11:56:43.6406302+03:00 40000005-0000-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Comments] ([AppUserID], [CommentContent], [CommentDate], [CommentStatus], [CommentUser], [DestinationId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);" (0723d8ff)
+2023-05-27T11:56:43.6557741+03:00 40000004-0004-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-27T11:56:45.0840131+03:00 4000000a-0003-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T11:56:45.0922416+03:00 4000000a-0003-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T11:56:45.0939164+03:00 4000000a-0003-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId]
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T11:56:47.9472724+03:00 40000006-0000-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T11:56:47.9503328+03:00 40000006-0000-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T11:56:47.9520708+03:00 40000006-0000-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId]
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T11:56:50.3932252+03:00 4000000e-0006-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T11:56:50.3967680+03:00 4000000e-0006-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T11:56:50.3983497+03:00 4000000e-0006-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId]
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T11:56:57.3223902+03:00 4000000e-0001-fb00-b63f-84710c7967bb [ERR] Failed executing DbCommand ("4"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Comments] ([AppUserID], [CommentContent], [CommentDate], [CommentStatus], [CommentUser], [DestinationId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);" (627a98df)
+2023-05-27T11:56:57.3426239+03:00 4000001a-0005-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-27T11:56:58.7898512+03:00 4000000e-0001-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T11:56:58.7930388+03:00 4000000e-0001-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T11:56:58.7949584+03:00 4000000e-0001-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId]
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T11:57:02.6866125+03:00 4000000a-0005-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T11:57:02.6909163+03:00 4000000a-0005-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T11:57:02.6927106+03:00 4000000a-0005-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId]
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T11:57:10.4251838+03:00 40000006-0005-fb00-b63f-84710c7967bb [ERR] Failed executing DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Comments] ([AppUserID], [CommentContent], [CommentDate], [CommentStatus], [CommentUser], [DestinationId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);" (627a98df)
+2023-05-27T11:57:10.4501070+03:00 40000014-0003-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-27T12:02:53.2067955+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T12:02:53.2145688+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T12:02:53.2149065+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T12:02:54.2999666+03:00 40000005-0001-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("58"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-27T12:03:37.1016011+03:00 40000008-0007-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-27T12:03:38.4505951+03:00 40000006-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("15"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T12:03:38.6488506+03:00 40000006-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:03:38.6638276+03:00 40000006-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId]
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:03:46.8838963+03:00 4000000a-0005-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T12:03:47.0785061+03:00 4000000a-0005-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Comments] ([AppUserID], [CommentContent], [CommentDate], [CommentStatus], [CommentUser], [DestinationId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);" (0723d8ff)
+2023-05-27T12:03:47.1189515+03:00 40000006-0003-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-27T12:03:57.8671554+03:00 40000018-0001-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T12:03:57.8737605+03:00 40000018-0001-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:03:57.8751476+03:00 40000018-0001-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId]
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:04:02.2848684+03:00 4000001e-0001-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T12:04:02.2894360+03:00 4000001e-0001-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:04:02.2910079+03:00 4000001e-0001-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId]
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:04:07.7072840+03:00 40000020-0001-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T12:04:07.7365852+03:00 40000020-0001-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("20"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Comments] ([AppUserID], [CommentContent], [CommentDate], [CommentStatus], [CommentUser], [DestinationId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);" (0723d8ff)
+2023-05-27T12:04:07.7471954+03:00 40000022-0001-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-27T12:04:11.2678451+03:00 40000018-0000-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T12:04:11.2700343+03:00 40000018-0000-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:04:11.2713399+03:00 40000018-0000-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId]
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:07:22.4273333+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T12:07:22.4368797+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T12:07:22.4373058+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T12:07:24.1654878+03:00 4000001a-0001-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("40"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T12:07:24.3605913+03:00 4000001a-0001-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:07:24.3682423+03:00 4000001a-0001-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId]
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:09:16.4141253+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T12:09:16.4238362+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T12:09:16.4245330+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T12:09:18.0737603+03:00 40000010-0000-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("51"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T12:09:18.2943258+03:00 40000010-0000-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:09:18.3033295+03:00 40000010-0000-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId]
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:10:49.0739974+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T12:10:49.0833689+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T12:10:49.0836586+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T12:10:50.8543365+03:00 4000000a-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("48"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T12:10:50.8543257+03:00 40000002-0003-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("48"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T12:10:51.1203586+03:00 40000002-0003-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:10:51.1203732+03:00 4000000a-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:10:51.1310829+03:00 4000000a-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId]
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:10:51.1310998+03:00 40000002-0003-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId]
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:10:57.0045470+03:00 40000014-0000-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T12:10:57.0130536+03:00 40000014-0000-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:10:57.0145152+03:00 40000014-0000-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId]
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:11:02.2050496+03:00 40000009-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T12:11:02.4551961+03:00 40000009-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("42"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Comments] ([AppUserID], [CommentContent], [CommentDate], [CommentStatus], [CommentUser], [DestinationId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);" (0723d8ff)
+2023-05-27T12:11:02.5707521+03:00 40000030-0001-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-27T12:11:04.6093094+03:00 40000016-0003-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T12:11:04.6122324+03:00 40000016-0003-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:11:04.6131285+03:00 40000016-0003-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId]
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:11:28.4719415+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T12:11:28.4801116+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T12:11:28.4805121+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T12:11:30.4861884+03:00 4000000a-0005-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("47"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T12:11:30.4861973+03:00 40000015-0004-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("47"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T12:11:30.7094852+03:00 40000015-0004-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:11:30.7094852+03:00 4000000a-0005-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:11:30.7194347+03:00 40000015-0004-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId]
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:11:30.7194899+03:00 4000000a-0005-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId]
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:11:34.1782464+03:00 40000022-0000-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T12:11:34.1884259+03:00 40000022-0000-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:11:34.1899260+03:00 40000022-0000-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId]
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:13:02.9448084+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T12:13:02.9535853+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T12:13:02.9542874+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T12:13:04.7489510+03:00 40000024-0006-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("44"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T12:13:04.9563318+03:00 40000024-0006-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:13:04.9679009+03:00 40000024-0006-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId]
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:13:26.3930454+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T12:13:26.4002024+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T12:13:26.4005215+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T12:13:27.9813679+03:00 4000000c-0009-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("33"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T12:13:28.1434588+03:00 4000000c-0009-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:13:28.1501655+03:00 4000000c-0009-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId]
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:13:33.2551662+03:00 40000013-0005-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T12:13:33.2645074+03:00 40000013-0005-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:13:33.2662832+03:00 40000013-0005-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId]
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:13:33.3875629+03:00 40000013-0005-fb00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AspNetCoreGeneratedDocument.Views_Shared_Components__CommentList_Default.ExecuteAsync() in C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC\Views\Shared\Components\_CommentList\Default.cshtml:line 10
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.ViewViewComponentResult.ExecuteAsync(ViewComponentContext context)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentInvoker.InvokeAsync(ViewComponentContext context)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.InvokeCoreAsync(ViewComponentDescriptor descriptor, Object arguments)
+   at AspNetCoreGeneratedDocument.Views_Destination_DestinationDetails.<ExecuteAsync>b__7_0() in C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC\Views\Destination\DestinationDetails.cshtml:line 171
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Destination_DestinationDetails.ExecuteAsync() in C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC\Views\Destination\DestinationDetails.cshtml:line 4
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-05-27T12:14:32.9139176+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T12:14:32.9233711+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T12:14:32.9238252+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T12:14:34.7302180+03:00 40000022-0007-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("82"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T12:14:34.9209246+03:00 40000022-0007-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:14:34.9282567+03:00 40000022-0007-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId]
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T12:26:08.2176174+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T12:26:08.2258069+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T12:26:08.2263191+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T12:26:09.3617443+03:00 4000000e-0009-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("28"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0" (0723d8ff)
+2023-05-27T12:26:09.4781050+03:00 4000000e-0009-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2023-05-27T12:26:09.4951608+03:00 4000000e-0009-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2023-05-27T12:26:09.5735280+03:00 4000000e-0009-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T12:26:09.6028221+03:00 4000000e-0009-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[AppUserID] = @__id_0" (0723d8ff)
+2023-05-27T12:26:51.6019308+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T12:26:51.6107034+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T12:26:51.6111547+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T12:26:53.3851070+03:00 40000022-0005-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("48"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T12:26:53.5865114+03:00 40000022-0005-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[AppUserID] = @__id_0" (0723d8ff)
+2023-05-27T12:26:53.6930461+03:00 40000022-0005-fd00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AspNetCoreGeneratedDocument.Areas_Members_Views_Comment_Index.ExecuteAsync() in C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC\Areas\Members\Views\Comment\Index.cshtml:line 18
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-05-27T12:27:10.9540931+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T12:27:10.9637140+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T12:27:10.9640631+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T12:27:11.8152617+03:00 40000007-000a-ff00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.ArgumentNullException: Value cannot be null. (Parameter 'userName')
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at TraversalApp.MVC.Areas.Members.Controllers.CommentController.Index() in C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC\Areas\Members\Controllers\CommentController.cs:line 25
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-05-27T12:27:21.7343203+03:00 4000000c-0003-fc00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.ArgumentNullException: Value cannot be null. (Parameter 'userName')
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at TraversalApp.MVC.Areas.Members.Controllers.CommentController.Index() in C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC\Areas\Members\Controllers\CommentController.cs:line 25
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-05-27T12:27:39.8286593+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T12:27:39.8380365+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T12:27:39.8383657+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T12:27:40.9479081+03:00 40000005-0007-fd00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.ArgumentNullException: Value cannot be null. (Parameter 'userName')
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at TraversalApp.MVC.Areas.Members.Controllers.CommentController.Index() in C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC\Areas\Members\Controllers\CommentController.cs:line 25
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-05-27T12:29:01.1144797+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T12:29:01.1252599+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T12:29:01.1256608+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T12:29:02.6458591+03:00 4000004a-0002-ff00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.ArgumentNullException: Value cannot be null. (Parameter 'userName')
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at TraversalApp.MVC.Areas.Members.Controllers.CommentController.Index() in C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC\Areas\Members\Controllers\CommentController.cs:line 25
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-05-27T12:29:02.9459215+03:00 4000000f-0003-fc00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.ArgumentNullException: Value cannot be null. (Parameter 'userName')
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at TraversalApp.MVC.Areas.Members.Controllers.CommentController.Index() in C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC\Areas\Members\Controllers\CommentController.cs:line 25
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-05-27T12:29:16.6982149+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T12:29:16.7095039+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T12:29:16.7100198+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T12:29:18.3065801+03:00 40000031-0006-ff00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.ArgumentNullException: Value cannot be null. (Parameter 'userName')
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at TraversalApp.MVC.Areas.Members.Controllers.CommentController.Index() in C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC\Areas\Members\Controllers\CommentController.cs:line 25
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-05-27T12:29:28.1281294+03:00 40000033-0006-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("77"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T12:29:28.7106337+03:00 40000033-0006-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("5"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2023-05-27T12:29:28.7735658+03:00 40000033-0006-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2023-05-27T12:29:28.8662587+03:00 40000033-0004-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T12:29:34.8366155+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T12:29:34.8503017+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T12:29:34.8511304+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T12:29:37.2778306+03:00 4000002c-0007-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("63"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T12:29:37.2778379+03:00 4000002e-0001-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("63"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T12:29:37.6561711+03:00 4000002c-0007-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("5"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[AppUserID] = @__id_0" (0723d8ff)
+2023-05-27T12:29:57.0652952+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T12:29:57.0783979+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T12:29:57.0790390+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T12:29:59.7924232+03:00 40000015-0003-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("80"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T12:29:59.7924211+03:00 40000031-0004-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("80"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T12:30:00.1254179+03:00 40000031-0004-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[AppUserID] = @__id_0" (0723d8ff)
+2023-05-27T12:32:37.8665531+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T12:32:37.8790973+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T12:32:37.8796034+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T12:32:40.4539990+03:00 4000002d-0004-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("77"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T12:32:40.4539845+03:00 40000038-0006-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("77"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T12:32:40.8030926+03:00 40000038-0006-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("5"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[AppUserID] = @__id_0" (0723d8ff)
+2023-05-27T12:32:43.0824459+03:00 40000008-0003-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T12:32:43.8593692+03:00 4000003a-0006-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T12:32:43.8618370+03:00 4000003a-0006-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[AppUserID] = @__id_0" (0723d8ff)
+2023-05-27T12:33:11.7308323+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T12:33:11.7417684+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T12:33:11.7422130+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T12:33:14.3787082+03:00 4000003c-0006-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("80"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T12:33:14.7248253+03:00 4000003c-0006-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[AppUserID] = @__id_0" (0723d8ff)
+2023-05-27T12:33:55.8693388+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T12:33:55.8833054+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T12:33:55.8839303+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T12:33:58.4082650+03:00 40000026-0001-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("73"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T12:33:58.7468103+03:00 40000026-0001-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("5"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[AppUserID] = @__id_0" (0723d8ff)
+2023-05-27T12:34:42.0843576+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T12:34:42.0988928+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T12:34:42.0994294+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T12:34:44.6712599+03:00 40000040-0006-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("65"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T12:34:45.0065684+03:00 40000040-0006-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("5"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[AppUserID] = @__id_0" (0723d8ff)
+2023-05-27T12:36:04.6587683+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T12:36:04.6737424+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T12:36:04.6743181+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T12:36:04.8478263+03:00 40000010-0008-fc00-b63f-84710c7967bb [INF] Index page open (9e9201ee)
+2023-05-27T12:36:04.8507321+03:00 40000010-0008-fc00-b63f-84710c7967bb [ERR] Error Logs (ff83272d)
+2023-05-27T12:36:16.7059127+03:00 40000035-0004-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("89"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T12:36:17.3270916+03:00 40000035-0004-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("7"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2023-05-27T12:36:17.3792054+03:00 40000035-0004-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2023-05-27T12:36:17.4590927+03:00 4000003a-0001-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T12:36:19.2259697+03:00 4000001b-0002-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-27T12:36:19.4377150+03:00 4000001b-0002-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-27T12:36:19.4638659+03:00 4000001b-0002-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-27T12:36:19.5151377+03:00 4000001b-0002-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[Description], [f].[Image], [f].[IsBigArea], [f].[Status], [f].[Title]
+FROM [Features] AS [f]" (0723d8ff)
+2023-05-27T12:36:19.5460432+03:00 4000001b-0002-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Description], [s].[Title]
+FROM [SubAbouts] AS [s]" (0723d8ff)
+2023-05-27T12:36:19.5689237+03:00 4000001b-0002-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Client], [t].[ClientImage], [t].[Comment], [t].[Status]
+FROM [Testimonials] AS [t]" (0723d8ff)
+2023-05-27T12:36:20.7918764+03:00 40000046-0006-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T20:35:24.8389417+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T20:35:24.8477313+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T20:35:24.8479456+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T20:35:25.0205107+03:00 40000002-000b-ff00-b63f-84710c7967bb [INF] Index page open (9e9201ee)
+2023-05-27T20:35:25.0220231+03:00 40000002-000b-ff00-b63f-84710c7967bb [ERR] Error Logs (ff83272d)
+2023-05-27T20:35:31.4213708+03:00 40000002-0007-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("35"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:35:31.5504236+03:00 40000002-0007-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:35:31.5587111+03:00 40000002-0007-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId]
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:36:02.5545816+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T20:36:02.5593133+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T20:36:02.5595172+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T20:36:03.5678303+03:00 40000002-000e-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("28"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:36:03.7067530+03:00 40000002-000e-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:36:03.7133670+03:00 40000002-000e-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId]
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:40:39.0315240+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T20:40:39.0385503+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T20:40:39.0387879+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T20:40:39.1236413+03:00 40000008-000c-ff00-b63f-84710c7967bb [INF] Index page open (9e9201ee)
+2023-05-27T20:40:39.1249147+03:00 40000008-000c-ff00-b63f-84710c7967bb [ERR] Error Logs (ff83272d)
+2023-05-27T20:40:43.1970833+03:00 40000002-000e-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("29"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:40:43.3213618+03:00 40000002-000e-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:40:43.3652754+03:00 40000002-000e-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("6"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:40:49.7417136+03:00 4000000a-0004-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:40:49.7449776+03:00 4000000a-0004-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:40:49.7460731+03:00 4000000a-0004-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:40:53.1945027+03:00 40000023-0002-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-27T20:40:53.2073462+03:00 40000023-0002-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-27T20:40:53.2120060+03:00 40000023-0002-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-27T20:40:53.2273303+03:00 40000023-0002-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[Description], [f].[Image], [f].[IsBigArea], [f].[Status], [f].[Title]
+FROM [Features] AS [f]" (0723d8ff)
+2023-05-27T20:40:53.2387195+03:00 40000023-0002-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Description], [s].[Title]
+FROM [SubAbouts] AS [s]" (0723d8ff)
+2023-05-27T20:40:53.2477108+03:00 40000023-0002-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Client], [t].[ClientImage], [t].[Comment], [t].[Status]
+FROM [Testimonials] AS [t]" (0723d8ff)
+2023-05-27T20:40:54.8530871+03:00 4000000c-0006-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-27T20:40:56.0068072+03:00 4000001c-000a-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:40:56.0104865+03:00 4000001c-000a-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:40:56.0108687+03:00 4000001c-000a-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:41:08.3754504+03:00 4000000f-0002-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T20:41:11.2731474+03:00 40000008-0000-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T20:41:32.7142318+03:00 400001f6-0000-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T20:41:32.7987403+03:00 400001f6-0000-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T20:41:32.8725296+03:00 400001f6-0000-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("13"ms) [Parameters=["@p18='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p19='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 4000), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [Gender] = @p4, [ImageUrl] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [Name] = @p8, [NormalizedEmail] = @p9, [NormalizedUserName] = @p10, [PasswordHash] = @p11, [PhoneNumber] = @p12, [PhoneNumberConfirmed] = @p13, [SecurityStamp] = @p14, [Surname] = @p15, [TwoFactorEnabled] = @p16, [UserName] = @p17
+OUTPUT 1
+WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;" (0723d8ff)
+2023-05-27T20:41:38.8037241+03:00 4000000c-000e-f800-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T20:41:38.8617427+03:00 4000000c-000e-f800-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T20:41:38.8639719+03:00 4000000c-000e-f800-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@p18='?' (DbType = Int32), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p19='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTimeOffset), @p8='?' (Size = 4000), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 4000), @p15='?' (Size = 4000), @p16='?' (DbType = Boolean), @p17='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [Gender] = @p4, [ImageUrl] = @p5, [LockoutEnabled] = @p6, [LockoutEnd] = @p7, [Name] = @p8, [NormalizedEmail] = @p9, [NormalizedUserName] = @p10, [PasswordHash] = @p11, [PhoneNumber] = @p12, [PhoneNumberConfirmed] = @p13, [SecurityStamp] = @p14, [Surname] = @p15, [TwoFactorEnabled] = @p16, [UserName] = @p17
+OUTPUT 1
+WHERE [Id] = @p18 AND [ConcurrencyStamp] = @p19;" (0723d8ff)
+2023-05-27T20:41:44.9040795+03:00 40000036-000a-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T20:41:49.4044730+03:00 4000001c-0008-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T20:42:10.9972003+03:00 40000002-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T20:42:11.0717828+03:00 40000002-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2023-05-27T20:42:11.0834128+03:00 40000002-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2023-05-27T20:42:11.0985606+03:00 40000013-0002-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T20:42:14.8974993+03:00 40000006-0008-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-27T20:42:14.8994691+03:00 40000006-0008-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-27T20:42:14.8998009+03:00 40000006-0008-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-27T20:42:14.9009090+03:00 40000006-0008-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[Description], [f].[Image], [f].[IsBigArea], [f].[Status], [f].[Title]
+FROM [Features] AS [f]" (0723d8ff)
+2023-05-27T20:42:14.9021568+03:00 40000006-0008-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Description], [s].[Title]
+FROM [SubAbouts] AS [s]" (0723d8ff)
+2023-05-27T20:42:14.9032799+03:00 40000006-0008-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Client], [t].[ClientImage], [t].[Comment], [t].[Status]
+FROM [Testimonials] AS [t]" (0723d8ff)
+2023-05-27T20:42:17.8478889+03:00 40000002-0000-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-27T20:42:18.6774496+03:00 40000002-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:42:18.6786756+03:00 40000002-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:42:18.6792864+03:00 40000002-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:42:21.5488943+03:00 40000008-0006-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T20:42:21.6289356+03:00 40000008-0006-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("8"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Comments] ([AppUserID], [CommentContent], [CommentDate], [CommentStatus], [CommentUser], [DestinationId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);" (0723d8ff)
+2023-05-27T20:42:21.6438207+03:00 40000006-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-27T20:42:23.2319413+03:00 4000001c-0004-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:42:23.2328049+03:00 4000001c-0004-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:42:23.2332335+03:00 4000001c-0004-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:42:56.7077119+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T20:42:56.7124787+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T20:42:56.7126563+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T20:42:57.7328463+03:00 40000010-000c-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("30"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:42:57.7328485+03:00 4000001e-000a-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("30"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:42:57.8728268+03:00 4000001e-000a-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:42:57.8728242+03:00 40000010-000c-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:42:57.9077611+03:00 4000001e-000a-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:42:57.9078164+03:00 40000010-000c-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:43:20.4008906+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T20:43:20.4055812+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T20:43:20.4058290+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T20:43:21.3208234+03:00 40000004-0005-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("25"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:43:21.4538412+03:00 40000004-0005-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:43:21.4884981+03:00 40000004-0005-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:44:39.3313764+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T20:44:39.3361937+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T20:44:39.3363293+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T20:44:39.4968553+03:00 40000006-000d-fe00-b63f-84710c7967bb [INF] Index page open (9e9201ee)
+2023-05-27T20:44:39.4978915+03:00 40000006-000d-fe00-b63f-84710c7967bb [ERR] Error Logs (ff83272d)
+2023-05-27T20:44:40.3564184+03:00 40000014-000c-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("26"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:44:40.4668606+03:00 40000014-000c-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:44:40.5006273+03:00 40000014-000c-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:44:40.7927782+03:00 4000001e-0006-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:44:40.7990186+03:00 4000001e-0006-fc00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AspNetCoreGeneratedDocument.Views_Destination_DestinationDetails.<ExecuteAsync>b__7_0() in C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC\Views\Destination\DestinationDetails.cshtml:line 32
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Destination_DestinationDetails.ExecuteAsync() in C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC\Views\Destination\DestinationDetails.cshtml:line 4
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-05-27T20:45:36.0341713+03:00 40000202-0000-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:45:36.0378368+03:00 40000202-0000-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:45:36.0391032+03:00 40000202-0000-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:45:39.1122057+03:00 40000004-000c-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:45:39.1155671+03:00 40000004-000c-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:45:39.1162738+03:00 40000004-000c-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:46:23.3482112+03:00 4000000c-000b-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:46:23.3494793+03:00 4000000c-000b-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:46:23.3503113+03:00 4000000c-000b-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:46:45.0638431+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T20:46:45.0734738+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T20:46:45.0737725+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T20:46:45.1420968+03:00 4000000e-000b-ff00-b63f-84710c7967bb [INF] Index page open (9e9201ee)
+2023-05-27T20:46:45.1432939+03:00 4000000e-000b-ff00-b63f-84710c7967bb [ERR] Error Logs (ff83272d)
+2023-05-27T20:46:51.0068574+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T20:46:51.0240774+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T20:46:51.0259964+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T20:46:51.2165012+03:00 40000034-0004-fc00-b63f-84710c7967bb [INF] Index page open (9e9201ee)
+2023-05-27T20:46:51.2220855+03:00 40000034-0004-fc00-b63f-84710c7967bb [ERR] Error Logs (ff83272d)
+2023-05-27T20:46:56.5510449+03:00 4000000a-0003-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("41"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T20:46:56.7973363+03:00 4000000a-0003-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2023-05-27T20:46:56.8241339+03:00 4000000a-0003-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2023-05-27T20:46:56.8660306+03:00 40000215-0000-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T20:47:01.0718961+03:00 4000000a-0000-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-27T20:47:01.1663820+03:00 4000000a-0000-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-27T20:47:01.2585277+03:00 4000000a-0000-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-27T20:47:01.5367325+03:00 4000000a-0000-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[Description], [f].[Image], [f].[IsBigArea], [f].[Status], [f].[Title]
+FROM [Features] AS [f]" (0723d8ff)
+2023-05-27T20:47:01.5518320+03:00 4000000a-0000-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Description], [s].[Title]
+FROM [SubAbouts] AS [s]" (0723d8ff)
+2023-05-27T20:47:01.5644952+03:00 4000000a-0000-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Client], [t].[ClientImage], [t].[Comment], [t].[Status]
+FROM [Testimonials] AS [t]" (0723d8ff)
+2023-05-27T20:47:02.4976747+03:00 4000021b-0000-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T20:47:03.5208880+03:00 400000be-0008-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T20:47:03.5518422+03:00 400000be-0008-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[AppUserID] = @__id_0" (0723d8ff)
+2023-05-27T20:47:05.8974909+03:00 4000001a-000e-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-27T20:47:05.9036057+03:00 4000001a-000e-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-27T20:47:05.9054642+03:00 4000001a-000e-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Guides] AS [g]" (0723d8ff)
+2023-05-27T20:47:05.9087538+03:00 4000001a-000e-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [f].[Id], [f].[Description], [f].[Image], [f].[IsBigArea], [f].[Status], [f].[Title]
+FROM [Features] AS [f]" (0723d8ff)
+2023-05-27T20:47:05.9121800+03:00 4000001a-000e-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Description], [s].[Title]
+FROM [SubAbouts] AS [s]" (0723d8ff)
+2023-05-27T20:47:05.9158827+03:00 4000001a-000e-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[Id], [t].[Client], [t].[ClientImage], [t].[Comment], [t].[Status]
+FROM [Testimonials] AS [t]" (0723d8ff)
+2023-05-27T20:47:08.8580377+03:00 4000002c-000a-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-27T20:47:10.2265465+03:00 4000001c-000e-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:47:10.3437091+03:00 4000001c-000e-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:47:10.3506967+03:00 4000001c-000e-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:47:17.1297420+03:00 40000004-000a-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-05-27T20:47:17.2467775+03:00 40000004-000a-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Comments] ([AppUserID], [CommentContent], [CommentDate], [CommentStatus], [CommentUser], [DestinationId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);" (0723d8ff)
+2023-05-27T20:47:17.2796292+03:00 4000002c-0006-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-27T20:47:18.5043441+03:00 40000009-0004-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:47:18.5083787+03:00 40000009-0004-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:47:18.5103966+03:00 40000009-0004-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:48:37.8663715+03:00 40000007-000f-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:48:37.8723532+03:00 40000007-000f-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:48:37.8742592+03:00 40000007-000f-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:48:39.3129297+03:00 40000011-0004-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:48:39.3163492+03:00 40000011-0004-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:48:39.3181750+03:00 40000011-0004-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:48:39.6905560+03:00 40000024-000e-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:48:39.6934292+03:00 40000024-000e-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:48:39.6955027+03:00 40000024-000e-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:48:40.0110718+03:00 4000001a-000e-f800-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:48:40.0150186+03:00 4000001a-000e-f800-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:48:40.0172184+03:00 4000001a-000e-f800-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:48:40.5032476+03:00 4000001c-000c-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:48:40.5068462+03:00 4000001c-000c-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:48:40.5086178+03:00 4000001c-000c-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:48:40.9004228+03:00 40000020-000c-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:48:40.9038855+03:00 40000020-000c-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:48:40.9060211+03:00 40000020-000c-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:48:41.2271331+03:00 40000020-000e-f800-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:48:41.2308460+03:00 40000020-000e-f800-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:48:41.2327410+03:00 40000020-000e-f800-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:48:41.5255602+03:00 4000000a-0009-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:48:41.5295985+03:00 4000000a-0009-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:48:41.5317527+03:00 4000000a-0009-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:48:41.8611336+03:00 40000019-0004-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:48:41.8646220+03:00 40000019-0004-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:48:41.8664495+03:00 40000019-0004-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:49:03.2817296+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T20:49:03.2874684+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T20:49:03.2877357+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T20:49:03.3675181+03:00 4000001f-0002-fc00-b63f-84710c7967bb [INF] Index page open (9e9201ee)
+2023-05-27T20:49:03.3690433+03:00 4000001f-0002-fc00-b63f-84710c7967bb [ERR] Error Logs (ff83272d)
+2023-05-27T20:49:09.3062123+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T20:49:09.3115720+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T20:49:09.3118164+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T20:49:09.3739576+03:00 40000021-0002-fc00-b63f-84710c7967bb [INF] Index page open (9e9201ee)
+2023-05-27T20:49:09.3750634+03:00 40000021-0002-fc00-b63f-84710c7967bb [ERR] Error Logs (ff83272d)
+2023-05-27T20:49:09.5007818+03:00 40000015-000c-fd00-b63f-84710c7967bb [INF] Index page open (9e9201ee)
+2023-05-27T20:49:09.5008202+03:00 40000015-000c-fd00-b63f-84710c7967bb [ERR] Error Logs (ff83272d)
+2023-05-27T20:49:12.9646428+03:00 400000e4-0008-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("25"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:49:13.0758430+03:00 400000e4-0008-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:49:13.1139652+03:00 400000e4-0008-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:49:19.7335300+03:00 4000001f-000c-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:49:19.7367442+03:00 4000001f-000c-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:49:19.7376282+03:00 4000001f-000c-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:49:20.8184422+03:00 40000021-000c-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-05-27T20:49:22.7874242+03:00 4000002f-000c-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:49:22.7907348+03:00 4000002f-000c-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:49:22.7915039+03:00 4000002f-000c-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:49:37.5686522+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T20:49:37.5743369+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T20:49:37.5746714+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T20:49:38.6469336+03:00 40000035-0002-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("29"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:49:38.6469336+03:00 400000f2-0008-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("29"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:49:38.8057123+03:00 400000f2-0008-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:49:38.8057163+03:00 40000035-0002-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:49:38.8409136+03:00 400000f2-0008-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:49:38.8410917+03:00 40000035-0002-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:49:40.8713758+03:00 40000035-0004-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:49:40.8764364+03:00 40000035-0004-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:49:40.8775913+03:00 40000035-0004-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:49:44.8428651+03:00 40000037-0002-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T20:49:44.8440331+03:00 40000037-0002-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T20:49:44.8446240+03:00 40000037-0002-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T23:02:33.2002184+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T23:02:33.2070108+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T23:02:33.2072454+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T23:02:34.9080415+03:00 400000d5-000c-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("39"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T23:02:34.9899853+03:00 400000d5-000c-fe00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AspNetCoreGeneratedDocument.Views_Destination_DestinationDetails.<ExecuteAsync>b__7_0() in C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC\Views\Destination\DestinationDetails.cshtml:line 32
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCoreGeneratedDocument.Views_Destination_DestinationDetails.ExecuteAsync() in C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC\Views\Destination\DestinationDetails.cshtml:line 4
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-05-27T23:02:41.7977995+03:00 40000002-0003-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("6"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T23:02:42.0384889+03:00 40000002-0003-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T23:02:42.1463726+03:00 40000002-0003-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("16"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T23:07:08.0878158+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T23:07:08.0951198+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T23:07:08.0954225+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T23:07:09.6853438+03:00 4000005b-000a-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("32"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T23:07:09.9135172+03:00 4000005b-000a-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("6"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T23:07:09.9701255+03:00 4000005b-000a-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T23:10:07.0595382+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-05-27T23:10:07.0667977+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-05-27T23:10:07.0671130+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-05-27T23:10:08.2880391+03:00 400000e3-000c-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("74"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [d].[Id], [d].[Capacity], [d].[City], [d].[ContentImage], [d].[CoverImage], [d].[DayNight], [d].[Description], [d].[Image], [d].[Maxim], [d].[MaximAuthor], [d].[MaximStatus], [d].[Price], [d].[Status], [d].[SubDetails], [d].[TopDetails]
+FROM [Destinations] AS [d]
+WHERE [d].[Id] = @__p_0" (0723d8ff)
+2023-05-27T23:10:08.6307502+03:00 400000e3-000c-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Comments] AS [c]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)
+2023-05-27T23:10:08.6664269+03:00 400000e3-000c-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[AppUserID], [c].[CommentContent], [c].[CommentDate], [c].[CommentStatus], [c].[CommentUser], [c].[DestinationId], [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Comments] AS [c]
+INNER JOIN [AspNetUsers] AS [a] ON [c].[AppUserID] = [a].[Id]
+WHERE [c].[DestinationId] = @__id_0" (0723d8ff)

@@ -18,5 +18,10 @@ namespace TraversalApp.Service.Services
         {
             _destinationRepository = destinationRepository;
         }
+
+        public Destination GetDestinationsWithGuide(int id)
+        {
+            return _destinationRepository.GetDestinationsWithGuide(id); 
+        }
     }
 }

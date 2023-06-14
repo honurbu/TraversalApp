@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using TraversalApp.Core.Entites;
 using TraversalApp.Core.Services;
 
 namespace TraversalApp.MVC.Controllers
 {
+    [AllowAnonymous]
     public class DestinationController : Controller
     {
         private readonly IDestinationService _destination;
@@ -24,7 +26,8 @@ namespace TraversalApp.MVC.Controllers
         public async Task<IActionResult> DestinationDetails(int id)
         {
             ViewBag.i = id;
-            var values = await _destination.GetByIdAsync(id);
+            //var values = await _destination.GetByIdAsync(id);
+            var values = _destination.GetDestinationsWithGuide(id);
             return View(values);
         }
 

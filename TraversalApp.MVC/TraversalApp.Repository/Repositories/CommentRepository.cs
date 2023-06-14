@@ -21,9 +21,21 @@ namespace TraversalApp.Repository.Repositories
             return _context.Comments.Include(x => x.Destination);
         }
 
+        public List<Comment> GetListCommentWithAppUser(int id)
+        {
+            return _context.Comments.Include(x=>x.AppUser).Where(x=>x.AppUserID == id).ToList();
+        }
+
         public IQueryable<Comment> GetListCommentWithDestination()
         {
              return _context.Comments.Include(x => x.Destination);
         }
+
+        public IQueryable<Comment> GetListCommentWithDestination(int id)
+        {
+            return _context.Comments.Include(y => y.AppUser).Where(x=>x.DestinationId == id);
+        }
     }
 }
+
+

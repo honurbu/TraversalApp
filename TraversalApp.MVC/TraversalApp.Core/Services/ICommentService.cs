@@ -11,6 +11,8 @@ namespace TraversalApp.Core.Services
     {
         IQueryable<Comment> GetDestinationById(int id);
         IQueryable<Comment> GetListCommentWithDestination();
+        List<Comment> GetListCommentWithAppUser(int id);
+        IQueryable<Comment> GetListCommentWithDestination(int id);
 
     }
 }

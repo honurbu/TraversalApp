@@ -1,0 +1,34 @@
+﻿@model TraversalApp.Core.DTOs.VisitorApiDto
+@{
+    ViewData["Title"] = "UpdateVisitor";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Api ile Ziyaretçi Güncelleme</h1>
+<br />
+
+<form method="post">
+
+    <input type="hidden" asp-for="Id"/>
+    <label>Ziyaretçi Adı</label>
+    <input type="text" class="form-control" asp-for="Name" />
+    <br />
+
+    <label>Ziyaretçi Soyadı</label>
+    <input type="text" class="form-control" asp-for="Surname" />
+    <br />
+
+    <label>Ziyaretçi Şehiri</label>
+    <input type="text" class="form-control" asp-for="City" />
+    <br />
+
+    <label>Ziyaretçi Ülkesi</label>
+    <input type="text" class="form-control" asp-for="Country" />
+    <br />
+
+    <label>Ziyaretçi Maili</label>
+    <input type="text" class="form-control" asp-for="Mail" />
+    <br />
+
+    <button class="btn btn-danger"> Ziyaretçiyi Güncelle </button>
+</form>

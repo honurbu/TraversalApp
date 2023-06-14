@@ -1,0 +1,5 @@
+2023-04-15T19:33:36.6777111+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-15T19:33:36.6867573+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-04-15T19:33:36.6930439+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-04-15T19:33:36.8752863+03:00 40000002-0003-fd00-b63f-84710c7967bb [INF] Index page open (9e9201ee)
+2023-04-15T19:33:36.8783930+03:00 40000002-0003-fd00-b63f-84710c7967bb [ERR] Error Logs (ff83272d)

@@ -14,5 +14,7 @@ namespace TraversalApp.Core.Entites
         public string? TwitterURL { get; set; }
         public string? InstagramURL { get; set; }
         public bool Status { get; set; }
+
+        public ICollection<Destination> Destinations { get; set; }
     }
 }
