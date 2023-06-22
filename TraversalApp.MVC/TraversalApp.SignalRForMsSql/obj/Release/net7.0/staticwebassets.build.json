@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Nx9mbmjhC6WtUHVql3s4IC93x582TG1nJ3cjpfctXQQ=",
+  "Source": "TraversalApp.SignalRForMsSql",
+  "BasePath": "_content/TraversalApp.SignalRForMsSql",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
