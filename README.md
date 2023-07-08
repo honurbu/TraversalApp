@@ -1,4 +1,5 @@
-![guide](https://github.com/honurbu/TraversalApp/assets/78691441/e1b035a6-9c2d-4fab-aef4-74869e681ecf)# TraversalApp Merhaba 😃
+# TraversalApp
+Herkese Merhaba 😃
 Murat Yücedağ hocamla eşzamanlı ve üstüne koyarak geliştirdiğim Traversal projesini paylaşmak istedim.
 
 Traversal projesi, bir gezi-seyehat projesidir. Proje .Net Core 7.0 kullanılarak yapılmıştır. Veri tabanı olarak MS SQL tercih edilmiştir. Projenin back-end'i çok güçlü olmakla beraber kullanıcılara çok güçlü bir arayüz de sunmaktadır.
