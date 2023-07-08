@@ -1,0 +1,922 @@
+2023-06-24T12:29:14.2207001+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T12:29:14.2456912+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T12:29:14.2492582+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T12:29:14.6413973+03:00 40000002-000b-fc00-b63f-84710c7967bb [INF] Index page open (9e9201ee)
+2023-06-24T12:29:14.6459436+03:00 40000002-000b-fc00-b63f-84710c7967bb [ERR] Error Logs (ff83272d)
+2023-06-24T12:29:30.6241042+03:00 40000009-0007-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("61"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-06-24T12:29:30.9181484+03:00 40000009-0007-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("5"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2023-06-24T12:29:30.9519224+03:00 40000009-0007-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2023-06-24T12:29:31.0015560+03:00 40000007-0005-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-06-24T12:29:37.2682080+03:00 4000000b-0007-ff00-b63f-84710c7967bb [INF] Start processing HTTP request "GET" "http://localhost:29736/api/Visitor" (338f1c77)
+2023-06-24T12:29:37.2763605+03:00 4000000b-0007-ff00-b63f-84710c7967bb [INF] Sending HTTP request "GET" "http://localhost:29736/api/Visitor" (2e7ac211)
+2023-06-24T12:29:42.6954272+03:00 4000000b-0007-ff00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:29736)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|281_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(QueueItem queueItem)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.HttpConnectionWaiter`1.WaitForConnectionAsync(Boolean async, CancellationToken requestCancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.<SendAsync>g__Core|5_0(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.<SendAsync>g__Core|5_0(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at TraversalApp.MVC.Areas.Adminss.Controllers.VisitorApiController.Index() in C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC\Areas\Adminss\Controllers\VisitorApiController.cs:line 23
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-06-24T12:29:44.2753605+03:00 4000000d-0007-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-06-24T12:29:48.0329419+03:00 40000006-0002-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-06-24T12:29:48.1938835+03:00 40000006-0002-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AspNetUsers] AS [a]" (0723d8ff)
+2023-06-24T12:29:51.4951613+03:00 40000006-0007-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[InstagramURL], [g].[Name], [g].[Status], [g].[TwitterURL]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-06-24T12:30:30.2973331+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T12:30:30.3086570+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T12:30:30.3156502+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T12:30:30.4699747+03:00 40000006-0004-fb00-b63f-84710c7967bb [INF] Index page open (9e9201ee)
+2023-06-24T12:30:30.4742585+03:00 40000006-0004-fb00-b63f-84710c7967bb [ERR] Error Logs (ff83272d)
+2023-06-24T12:30:39.0016935+03:00 40000009-0000-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("81"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-06-24T12:30:39.4915703+03:00 40000009-0000-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("6"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2023-06-24T12:30:39.5395435+03:00 40000009-0000-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2023-06-24T12:30:39.6032132+03:00 40000004-0008-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-06-24T12:30:45.1928088+03:00 4000000c-0007-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-06-24T12:30:45.3964703+03:00 4000000c-0007-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AspNetUsers] AS [a]" (0723d8ff)
+2023-06-24T12:30:48.6084540+03:00 40000008-0002-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[InstagramURL], [g].[Name], [g].[Status], [g].[TwitterURL]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-06-24T12:38:48.3466450+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T12:38:48.3538120+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T12:38:48.3540785+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T12:39:15.6898190+03:00 4000002e-0000-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("27"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-06-24T12:39:15.8646266+03:00 4000002e-0000-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2023-06-24T12:39:15.8813191+03:00 4000002e-0000-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2023-06-24T12:39:15.9141709+03:00 40000008-0008-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-06-24T12:39:23.5756422+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T12:39:23.5809724+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T12:39:23.5812639+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T12:39:24.4664458+03:00 40000006-0006-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T12:39:24.4664458+03:00 40000004-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("20"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-06-24T12:39:27.4005770+03:00 40000032-0000-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [g].[Id], [g].[Description], [g].[Image], [g].[InstagramURL], [g].[Name], [g].[Status], [g].[TwitterURL]
+FROM [Guides] AS [g]" (0723d8ff)
+2023-06-24T12:39:28.6958948+03:00 4000000e-0004-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T12:41:40.6409983+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T12:41:40.6460963+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T12:41:40.6463043+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T12:41:41.5437533+03:00 4000000c-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T12:42:43.3255866+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T12:42:43.3304076+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T12:42:43.3306034+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T12:42:44.1888283+03:00 4000002e-0004-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T12:42:59.0514971+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T12:42:59.0574469+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T12:42:59.0577841+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T12:43:03.6951484+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T12:43:03.7033255+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T12:43:03.7036157+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T12:43:04.6218194+03:00 40000021-0002-f900-b63f-84710c7967bb [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T12:43:27.9673911+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T12:43:27.9728388+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T12:43:27.9730176+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T12:43:30.3219593+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T12:43:30.3279977+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T12:43:30.3283800+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T12:43:31.2880300+03:00 40000006-000a-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("25"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T12:45:13.6122799+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T12:45:13.6174047+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T12:45:13.6176011+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T12:45:18.0480603+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T12:45:18.0528036+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T12:45:18.0531208+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T12:45:18.9505834+03:00 40000006-000d-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T12:46:48.3799752+03:00 40000008-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T12:47:32.2559699+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T12:47:32.2615071+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T12:47:32.2617837+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T12:47:33.1274823+03:00 4000000a-0004-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T12:47:33.1274744+03:00 4000000a-0001-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T12:47:50.8072158+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T12:47:50.8123602+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T12:47:50.8124817+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T12:47:51.7474457+03:00 40000014-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T12:47:51.7474452+03:00 4000001b-000e-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T12:48:16.9943087+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T12:48:16.9994033+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T12:48:16.9995808+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T12:48:17.9200400+03:00 40000018-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T12:48:29.3968928+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T12:48:29.4021633+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T12:48:29.4023019+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T12:48:30.3279735+03:00 4000003a-0000-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("35"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:00:00.1142787+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:00:00.1188789+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:00:00.1190448+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:00:00.9791713+03:00 40000027-000e-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:00:18.6339897+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:00:18.6395514+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:00:18.6397128+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:00:23.0987257+03:00 40000033-0004-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("25"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2023-06-24T13:00:23.2315379+03:00 40000033-0004-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("10"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 256), @p2='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([ConcurrencyStamp], [Name], [NormalizedName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);" (0723d8ff)
+2023-06-24T13:00:26.7568745+03:00 4000002d-0008-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:00:33.3229117+03:00 40000012-0004-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2023-06-24T13:00:33.3293746+03:00 40000012-0004-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 256), @p2='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([ConcurrencyStamp], [Name], [NormalizedName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);" (0723d8ff)
+2023-06-24T13:00:35.8640756+03:00 40000014-000a-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:01:18.5616536+03:00 4000004a-0000-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2023-06-24T13:01:18.5921107+03:00 4000004a-0000-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("30"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 256), @p2='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([ConcurrencyStamp], [Name], [NormalizedName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);" (0723d8ff)
+2023-06-24T13:01:22.1573399+03:00 4000001b-0002-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2023-06-24T13:01:22.1605132+03:00 4000001b-0002-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 256), @p2='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([ConcurrencyStamp], [Name], [NormalizedName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);" (0723d8ff)
+2023-06-24T13:01:25.2745922+03:00 40000033-000e-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2023-06-24T13:01:25.2773171+03:00 40000033-000e-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 256), @p2='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([ConcurrencyStamp], [Name], [NormalizedName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);" (0723d8ff)
+2023-06-24T13:01:29.3687005+03:00 4000000c-000a-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2023-06-24T13:01:29.3707425+03:00 4000000c-000a-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 256), @p2='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([ConcurrencyStamp], [Name], [NormalizedName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);" (0723d8ff)
+2023-06-24T13:01:31.3421499+03:00 40000050-0000-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:04:19.2581712+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:04:19.2641286+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:04:19.2643666+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:04:20.2259759+03:00 40000017-0009-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:04:55.8155946+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:04:55.8206995+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:04:55.8209463+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:04:56.7630196+03:00 4000001d-0008-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:05:04.6904586+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:05:04.6959005+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:05:04.6963564+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:05:05.6492385+03:00 4000003d-0008-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:05:09.8818854+03:00 4000001a-0002-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("10"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2023-06-24T13:05:10.0134753+03:00 4000001a-0002-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("59"ms) [Parameters=["@p0='?' (Size = 4000), @p1='?' (Size = 256), @p2='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetRoles] ([ConcurrencyStamp], [Name], [NormalizedName])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2);" (0723d8ff)
+2023-06-24T13:05:11.2801509+03:00 4000000c-0004-f900-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:05:12.1956006+03:00 40000020-000c-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:05:12.2167239+03:00 40000020-000c-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("9"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [AspNetRoles]
+OUTPUT 1
+WHERE [Id] = @p0 AND [ConcurrencyStamp] IS NULL;" (0723d8ff)
+2023-06-24T13:05:13.6736203+03:00 4000000a-0008-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:07:52.1843853+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:07:52.1890385+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:07:52.1891837+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:07:53.0762117+03:00 4000000a-000a-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:08:14.2762472+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:08:14.2810098+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:08:14.2811412+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:08:15.1689585+03:00 40000014-000a-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:08:45.7295187+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:08:45.7351663+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:08:45.7354806+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:08:46.5905069+03:00 40000011-0003-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:08:51.3901244+03:00 40000028-0002-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("11"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:08:51.3987240+03:00 40000028-0002-fb00-b63f-84710c7967bb [WRN] Role "6" validation failed: "InvalidRoleName". (60d773c7)
+2023-06-24T13:09:20.8911777+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:09:20.8972767+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:09:20.8975308+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:09:21.8258563+03:00 40000023-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("29"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0" (0723d8ff)
+2023-06-24T13:09:21.9517960+03:00 40000023-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2023-06-24T13:09:21.9740035+03:00 40000023-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2023-06-24T13:09:22.0597087+03:00 40000023-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:09:22.2610464+03:00 4000001e-0006-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0" (0723d8ff)
+2023-06-24T13:09:22.2627293+03:00 4000001e-0006-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2023-06-24T13:09:22.2643099+03:00 4000001e-0006-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2023-06-24T13:09:22.2710471+03:00 4000001e-0006-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:09:23.2553501+03:00 4000001a-000a-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:09:23.2625780+03:00 4000001a-000a-fd00-b63f-84710c7967bb [WRN] Role "6" validation failed: "InvalidRoleName". (60d773c7)
+2023-06-24T13:09:24.7467761+03:00 4000001e-000a-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:09:45.1638554+03:00 40000014-0004-f900-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:09:45.1644317+03:00 40000014-0004-f900-b63f-84710c7967bb [WRN] Role "4" validation failed: "InvalidRoleName". (60d773c7)
+2023-06-24T13:09:52.5033538+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:09:52.5086426+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:09:52.5087924+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:09:53.3492576+03:00 40000016-0008-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("19"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:09:53.3492555+03:00 4000001f-0009-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:09:53.3766386+03:00 40000016-0008-fd00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TraversalApp.MVC.Areas.Adminss.Controllers.RoleController.UpdateRole(Int32 id, CreateRoleDto roleDto) in C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC\Areas\Adminss\Controllers\RoleController.cs:line 64
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-06-24T13:09:55.5221108+03:00 40000008-000b-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:09:55.5283475+03:00 40000008-000b-fb00-b63f-84710c7967bb [WRN] Role "4" validation failed: "InvalidRoleName". (60d773c7)
+2023-06-24T13:11:00.6036748+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:11:00.6094718+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:11:00.6097720+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:11:01.4881410+03:00 40000028-0004-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:11:03.2812281+03:00 4000001b-0004-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("10"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:11:03.2884746+03:00 4000001b-0004-fa00-b63f-84710c7967bb [WRN] Role "7" validation failed: "InvalidRoleName". (60d773c7)
+2023-06-24T13:11:45.8459907+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:11:45.8524568+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:11:45.8527596+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:11:46.7210448+03:00 4000001d-0008-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:11:48.2895015+03:00 4000006b-0000-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("11"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:11:48.2970088+03:00 4000006b-0000-ff00-b63f-84710c7967bb [WRN] Role "6" validation failed: "InvalidRoleName". (60d773c7)
+2023-06-24T13:12:03.8272388+03:00 40000027-0008-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:12:03.8276431+03:00 40000027-0008-fd00-b63f-84710c7967bb [WRN] Role "4" validation failed: "InvalidRoleName". (60d773c7)
+2023-06-24T13:13:12.3318552+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:13:12.3370878+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:13:12.3372855+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:13:13.2906892+03:00 40000071-0000-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:13:25.0368804+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:13:25.0417244+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:13:25.0419148+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:13:25.9741293+03:00 40000040-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:13:30.6023493+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:13:30.6072097+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:13:30.6073563+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:13:31.4857716+03:00 40000023-0007-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:14:28.9351479+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:14:28.9396479+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:14:28.9398315+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:14:29.7849859+03:00 40000046-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:14:33.0585183+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:14:33.0632969+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:14:33.0634363+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:14:33.8988864+03:00 40000033-0002-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:14:33.8988864+03:00 40000048-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("19"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:14:33.9194043+03:00 40000048-0006-fa00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at TraversalApp.MVC.Areas.Adminss.Controllers.RoleController.UpdateRole(Int32 id, UpdateRoleDto roleDto) in C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC\Areas\Adminss\Controllers\RoleController.cs:line 64
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.<Invoke>g__AwaitMatcher|8_0(EndpointRoutingMiddleware middleware, HttpContext httpContext, Task`1 matcherTask)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-06-24T13:14:37.6379141+03:00 4000000f-000a-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:14:37.6437927+03:00 4000000f-000a-fc00-b63f-84710c7967bb [WRN] Role "4" validation failed: "InvalidRoleName". (60d773c7)
+2023-06-24T13:14:39.6597422+03:00 4000001e-000c-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:14:39.6602426+03:00 4000001e-000c-fd00-b63f-84710c7967bb [WRN] Role "7" validation failed: "InvalidRoleName". (60d773c7)
+2023-06-24T13:19:13.1863947+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:19:13.1909755+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:19:13.1911087+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:19:14.0585569+03:00 40000046-000e-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:19:16.5973711+03:00 40000025-0004-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("10"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:19:35.4781952+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:19:35.4833227+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:19:35.4834917+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:19:37.7793540+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:19:37.7844152+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:19:37.7846427+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:19:38.6454659+03:00 40000029-0004-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:19:40.1603099+03:00 40000031-0004-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("10"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:19:45.4556257+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:19:45.4610359+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:19:45.4612733+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:19:52.5391161+03:00 40000029-000e-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("29"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-06-24T13:19:52.7175024+03:00 40000029-000e-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__user_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2023-06-24T13:19:52.7359978+03:00 40000029-000e-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2023-06-24T13:19:52.7796992+03:00 40000049-0008-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[Gender], [a].[ImageUrl], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[Name], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[Surname], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2023-06-24T13:19:57.1469542+03:00 4000004b-0008-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Destinations] AS [d]" (0723d8ff)
+2023-06-24T13:19:57.1574510+03:00 4000004b-0008-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AspNetUsers] AS [a]" (0723d8ff)
+2023-06-24T13:20:00.3451030+03:00 40000046-0002-f900-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:20:01.4659500+03:00 4000002f-000e-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:21:09.5070579+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:21:09.5123944+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:21:09.5126872+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:21:10.3688013+03:00 4000004d-0000-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:21:13.8141318+03:00 40000052-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("10"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:22:43.2847302+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:22:43.2895397+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:22:43.2897141+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:22:44.1502280+03:00 40000057-0000-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:22:46.9784638+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:22:46.9842645+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:22:46.9844706+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:22:47.9524402+03:00 4000001b-000f-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:22:48.2020045+03:00 4000001c-000e-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:22:49.9388409+03:00 40000015-0008-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("9"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:23:56.5433494+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:23:56.5482495+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:23:56.5485032+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:23:57.4595011+03:00 4000000f-000b-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("23"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:23:58.8138567+03:00 40000017-0008-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("10"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:23:58.8224579+03:00 40000017-0008-fa00-b63f-84710c7967bb [WRN] Role "7" validation failed: "InvalidRoleName". (60d773c7)
+2023-06-24T13:23:58.8285768+03:00 40000017-0008-fa00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'TraversalApp.Core.Entites.AppRole', but this ViewDataDictionary instance requires a model item of type 'TraversalApp.Core.DTOs.UpdateRoleDto'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at lambda_method108(Closure, ViewDataDictionary)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-06-24T13:24:49.3963046+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:24:49.4016550+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:24:49.4018027+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:24:51.6159187+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:24:51.6204514+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:24:51.6206481+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:24:52.4874516+03:00 4000001b-0008-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:24:53.5449055+03:00 4000004b-000c-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("11"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:24:53.5530215+03:00 4000004b-000c-fe00-b63f-84710c7967bb [WRN] Role "8" validation failed: "InvalidRoleName". (60d773c7)
+2023-06-24T13:24:56.8933257+03:00 40000048-0002-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:24:56.8938568+03:00 40000048-0002-fb00-b63f-84710c7967bb [WRN] Role "8" validation failed: "InvalidRoleName". (60d773c7)
+2023-06-24T13:25:00.3000898+03:00 40000018-0003-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:25:00.3004783+03:00 40000018-0003-fd00-b63f-84710c7967bb [WRN] Role "8" validation failed: "InvalidRoleName". (60d773c7)
+2023-06-24T13:25:02.0635402+03:00 4000000c-0006-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:25:19.1471396+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:25:19.1521549+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:25:19.1523356+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:25:20.0406975+03:00 40000049-000a-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:25:21.6699831+03:00 40000021-000f-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("10"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:25:21.6785879+03:00 40000021-000f-fd00-b63f-84710c7967bb [WRN] Role "3" validation failed: "InvalidRoleName". (60d773c7)
+2023-06-24T13:25:24.8966983+03:00 4000005c-0006-fa00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:25:24.8970377+03:00 4000005c-0006-fa00-b63f-84710c7967bb [WRN] Role "3" validation failed: "InvalidRoleName". (60d773c7)
+2023-06-24T13:25:25.7441310+03:00 400000a8-000c-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:26:44.0449311+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:26:44.0502458+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:26:44.0504593+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:26:44.9308455+03:00 4000001a-0001-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:26:47.4014891+03:00 40000053-000a-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("12"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:26:47.4230203+03:00 40000053-000a-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2023-06-24T13:26:47.6562409+03:00 40000053-000a-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("135"ms) [Parameters=["@p3='?' (DbType = Int32), @p0='?' (Size = 4000), @p4='?' (Size = 4000), @p1='?' (Size = 256), @p2='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetRoles] SET [ConcurrencyStamp] = @p0, [Name] = @p1, [NormalizedName] = @p2
+OUTPUT 1
+WHERE [Id] = @p3 AND [ConcurrencyStamp] IS NULL;" (0723d8ff)
+2023-06-24T13:26:51.0901481+03:00 4000006b-0000-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:26:51.1000932+03:00 4000006b-0000-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2023-06-24T13:26:51.1740910+03:00 4000006b-0000-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("73"ms) [Parameters=["@p3='?' (DbType = Int32), @p0='?' (Size = 4000), @p4='?' (Size = 4000), @p1='?' (Size = 256), @p2='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetRoles] SET [ConcurrencyStamp] = @p0, [Name] = @p1, [NormalizedName] = @p2
+OUTPUT 1
+WHERE [Id] = @p3 AND [ConcurrencyStamp] = @p4;" (0723d8ff)
+2023-06-24T13:26:53.5336843+03:00 40000042-0008-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:27:01.3627521+03:00 40000038-0006-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:27:01.3648639+03:00 40000038-0006-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2023-06-24T13:27:01.3897623+03:00 40000038-0006-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("24"ms) [Parameters=["@p3='?' (DbType = Int32), @p0='?' (Size = 4000), @p4='?' (Size = 4000), @p1='?' (Size = 256), @p2='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetRoles] SET [ConcurrencyStamp] = @p0, [Name] = @p1, [NormalizedName] = @p2
+OUTPUT 1
+WHERE [Id] = @p3 AND [ConcurrencyStamp] IS NULL;" (0723d8ff)
+2023-06-24T13:27:04.6729098+03:00 40000043-000a-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:28:13.8882858+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:28:13.8930308+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:28:13.8934168+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:28:14.7762429+03:00 400000b6-000c-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:28:16.1474323+03:00 4000001c-0003-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("10"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:28:19.7000653+03:00 40000014-0006-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:28:20.8714271+03:00 4000001e-0003-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:29:44.8262283+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:29:44.8318661+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:29:44.8321929+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:29:45.7470209+03:00 400000bc-000c-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:29:54.5872309+03:00 40000050-000a-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("12"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:29:54.6042074+03:00 40000050-000a-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2023-06-24T13:29:54.6826876+03:00 40000050-000a-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("8"ms) [Parameters=["@p3='?' (DbType = Int32), @p0='?' (Size = 4000), @p4='?' (Size = 4000), @p1='?' (Size = 256), @p2='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetRoles] SET [ConcurrencyStamp] = @p0, [Name] = @p1, [NormalizedName] = @p2
+OUTPUT 1
+WHERE [Id] = @p3 AND [ConcurrencyStamp] = @p4;" (0723d8ff)
+2023-06-24T13:29:56.7841503+03:00 400000c0-000c-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:29:56.7852459+03:00 400000c0-000c-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2023-06-24T13:29:56.7870923+03:00 400000c0-000c-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@p3='?' (DbType = Int32), @p0='?' (Size = 4000), @p4='?' (Size = 4000), @p1='?' (Size = 256), @p2='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetRoles] SET [ConcurrencyStamp] = @p0, [Name] = @p1, [NormalizedName] = @p2
+OUTPUT 1
+WHERE [Id] = @p3 AND [ConcurrencyStamp] = @p4;" (0723d8ff)
+2023-06-24T13:29:58.3877028+03:00 40000051-000e-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:30:04.4193994+03:00 40000052-0008-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:30:04.4204334+03:00 40000052-0008-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2023-06-24T13:30:04.4218685+03:00 40000052-0008-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("1"ms) [Parameters=["@p3='?' (DbType = Int32), @p0='?' (Size = 4000), @p4='?' (Size = 4000), @p1='?' (Size = 256), @p2='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetRoles] SET [ConcurrencyStamp] = @p0, [Name] = @p1, [NormalizedName] = @p2
+OUTPUT 1
+WHERE [Id] = @p3 AND [ConcurrencyStamp] = @p4;" (0723d8ff)
+2023-06-24T13:31:33.2464542+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:31:33.2511939+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:31:33.2513477+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:31:34.2187865+03:00 40000014-000b-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("24"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:31:39.8551424+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:31:39.8599082+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:31:39.8601385+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:31:40.7053284+03:00 4000005e-0008-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("21"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:31:40.9162608+03:00 4000005d-0002-fb00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:31:44.1506407+03:00 40000075-0000-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("9"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:31:45.2519665+03:00 40000053-0002-f900-b63f-84710c7967bb [INF] Executed DbCommand ("3"ms) [Parameters=["@__roleDto_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__roleDto_Id_0" (0723d8ff)
+2023-06-24T13:31:45.2644336+03:00 40000053-0002-f900-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2023-06-24T13:31:45.3348695+03:00 40000053-0002-f900-b63f-84710c7967bb [INF] Executed DbCommand ("15"ms) [Parameters=["@p3='?' (DbType = Int32), @p0='?' (Size = 4000), @p4='?' (Size = 4000), @p1='?' (Size = 256), @p2='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetRoles] SET [ConcurrencyStamp] = @p0, [Name] = @p1, [NormalizedName] = @p2
+OUTPUT 1
+WHERE [Id] = @p3 AND [ConcurrencyStamp] = @p4;" (0723d8ff)
+2023-06-24T13:31:46.3942158+03:00 40000048-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:31:47.1335221+03:00 40000067-000e-ff00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:31:53.1890857+03:00 40000020-0003-fd00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:31:54.1856471+03:00 4000004c-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__roleDto_Id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__roleDto_Id_0" (0723d8ff)
+2023-06-24T13:31:54.1868679+03:00 4000004c-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2023-06-24T13:31:54.1909225+03:00 4000004c-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("2"ms) [Parameters=["@p3='?' (DbType = Int32), @p0='?' (Size = 4000), @p4='?' (Size = 4000), @p1='?' (Size = 256), @p2='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [AspNetRoles] SET [ConcurrencyStamp] = @p0, [Name] = @p1, [NormalizedName] = @p2
+OUTPUT 1
+WHERE [Id] = @p3 AND [ConcurrencyStamp] IS NULL;" (0723d8ff)
+2023-06-24T13:31:55.7943540+03:00 40000050-000c-fe00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[Id] = @__id_0" (0723d8ff)
+2023-06-24T13:31:58.7691337+03:00 40000050-0000-fc00-b63f-84710c7967bb [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]" (0723d8ff)
+2023-06-24T13:35:04.5665408+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:35:04.5720393+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:35:04.5723501+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:35:04.6001141+03:00 40000013-0005-fe00-b63f-84710c7967bb [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.ArgumentException: The path in 'value' must start with '/'. (Parameter 'value')
+   at Microsoft.AspNetCore.Http.PathString..ctor(String value)
+   at Microsoft.AspNetCore.Http.PathString.FromUriComponent(String uriComponent)
+   at Microsoft.AspNetCore.Http.PathString.op_Implicit(String s)
+   at Program.<>c.<<Main>$>b__0_5(CookieAuthenticationOptions opt) in C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC\Program.cs:line 95
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.<>c.<Get>b__10_0(String name, IOptionsFactory`1 factory)
+   at Microsoft.Extensions.Options.OptionsCache`1.<>c__DisplayClass3_1`1.<GetOrAdd>b__2()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd[TArg](String name, Func`3 createOptions, TArg factoryArgument)
+   at Microsoft.Extensions.Options.OptionsMonitor`1.Get(String name)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.InitializeAsync(AuthenticationScheme scheme, HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandlerProvider.GetHandlerAsync(HttpContext context, String authenticationScheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.StatusCodePagesMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-06-24T13:35:23.6077259+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:35:23.6145597+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:35:23.6148588+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)
+2023-06-24T13:35:57.1769612+03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-06-24T13:35:57.1823116+03:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2023-06-24T13:35:57.1825289+03:00  [INF] Content root path: "C:\Users\Onur\Desktop\Windows Form Projelerim\TraversalApp.MVC\TraversalApp.MVC" (cc26f24e)

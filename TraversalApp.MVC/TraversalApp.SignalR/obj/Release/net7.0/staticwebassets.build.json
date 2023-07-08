@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "QNRWGpeshds6GDKEy+34/ie1+p5N5WQpxsIUCF7nJWo=",
-  "Source": "TraversalApp.SignalRPostgre",
-  "BasePath": "_content/TraversalApp.SignalRPostgre",
+  "Hash": "Usy+JYMq84TcMoLZLDiyzHON/zm0GLOG531TaiIzYSs=",
+  "Source": "TraversalApp.SignalR",
+  "BasePath": "_content/TraversalApp.SignalR",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

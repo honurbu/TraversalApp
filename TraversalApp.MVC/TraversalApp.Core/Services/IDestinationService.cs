@@ -10,6 +10,7 @@ namespace TraversalApp.Core.Services
     public interface IDestinationService : IGenericService<Destination>
     {
         Destination GetDestinationsWithGuide(int id);
+        Task<List<Destination>> GetLast4Destinations();
 
     }
 }

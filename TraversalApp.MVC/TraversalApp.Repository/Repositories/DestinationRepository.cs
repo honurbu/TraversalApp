@@ -20,5 +20,10 @@ namespace TraversalApp.Repository.Repositories
         {
             return _context.Destinations.Where(x => x.Id == id).Include(x => x.Guide).FirstOrDefault();
         }
+
+        public async Task<List<Destination>> GetLast4Destinations()
+        {
+            return await _context.Destinations.OrderByDescending(x => x.Id).Take(4).ToListAsync();
+        }
     }
 }

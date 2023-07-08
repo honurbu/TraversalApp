@@ -2793,6 +2793,174 @@
       "PackagePath": "staticwebassets\\login\\vendor\\tilt\\tilt.jquery.min.js"
     },
     {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\.gitignore",
+      "PackagePath": "staticwebassets\\member\\.gitignore"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\CHANGELOG.md",
+      "PackagePath": "staticwebassets\\member\\CHANGELOG.md"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\LICENSE",
+      "PackagePath": "staticwebassets\\member"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\README.md",
+      "PackagePath": "staticwebassets\\member\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\assets\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\member\\assets\\js\\scripts.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\assets\\scss\\colors\\palette-variables.scss",
+      "PackagePath": "staticwebassets\\member\\assets\\scss\\colors\\palette-variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\assets\\scss\\style-rtl.scss",
+      "PackagePath": "staticwebassets\\member\\assets\\scss\\style-rtl.scss"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\assets\\scss\\style.scss",
+      "PackagePath": "staticwebassets\\member\\assets\\scss\\style.scss"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\assets\\scss\\variables\\components-variables.scss",
+      "PackagePath": "staticwebassets\\member\\assets\\scss\\variables\\components-variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\assets\\scss\\variables\\variables.scss",
+      "PackagePath": "staticwebassets\\member\\assets\\scss\\variables\\variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\buttons.html",
+      "PackagePath": "staticwebassets\\member\\buttons.html"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\cards.html",
+      "PackagePath": "staticwebassets\\member\\cards.html"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\charts.html",
+      "PackagePath": "staticwebassets\\member\\charts.html"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\config.json",
+      "PackagePath": "staticwebassets\\member\\config.json"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\form-elements.html",
+      "PackagePath": "staticwebassets\\member\\form-elements.html"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\gulp-tasks\\autoprefixer\\css.js",
+      "PackagePath": "staticwebassets\\member\\gulp-tasks\\autoprefixer\\css.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\gulp-tasks\\clean\\css.js",
+      "PackagePath": "staticwebassets\\member\\gulp-tasks\\clean\\css.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\gulp-tasks\\clean\\js.js",
+      "PackagePath": "staticwebassets\\member\\gulp-tasks\\clean\\js.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\gulp-tasks\\copy\\js.js",
+      "PackagePath": "staticwebassets\\member\\gulp-tasks\\copy\\js.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\gulp-tasks\\csscomb\\css.js",
+      "PackagePath": "staticwebassets\\member\\gulp-tasks\\csscomb\\css.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\gulp-tasks\\cssmin\\css.js",
+      "PackagePath": "staticwebassets\\member\\gulp-tasks\\cssmin\\css.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\gulp-tasks\\notify\\css.js",
+      "PackagePath": "staticwebassets\\member\\gulp-tasks\\notify\\css.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\gulp-tasks\\notify\\js.js",
+      "PackagePath": "staticwebassets\\member\\gulp-tasks\\notify\\js.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\gulp-tasks\\sass\\core.js",
+      "PackagePath": "staticwebassets\\member\\gulp-tasks\\sass\\core.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\gulp-tasks\\sass\\main.js",
+      "PackagePath": "staticwebassets\\member\\gulp-tasks\\sass\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\gulp-tasks\\sass\\pages.js",
+      "PackagePath": "staticwebassets\\member\\gulp-tasks\\sass\\pages.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\gulp-tasks\\sass\\plugins.js",
+      "PackagePath": "staticwebassets\\member\\gulp-tasks\\sass\\plugins.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\gulp-tasks\\sass\\style.js",
+      "PackagePath": "staticwebassets\\member\\gulp-tasks\\sass\\style.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\gulp-tasks\\sass\\watch.js",
+      "PackagePath": "staticwebassets\\member\\gulp-tasks\\sass\\watch.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\gulp-tasks\\uglify\\min.js",
+      "PackagePath": "staticwebassets\\member\\gulp-tasks\\uglify\\min.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\gulpfile.js",
+      "PackagePath": "staticwebassets\\member\\gulpfile.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\icons.html",
+      "PackagePath": "staticwebassets\\member\\icons.html"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\index.html",
+      "PackagePath": "staticwebassets\\member\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\package.json",
+      "PackagePath": "staticwebassets\\member\\package.json"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\page.html",
+      "PackagePath": "staticwebassets\\member\\page.html"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\src\\js\\core\\app-lite.js",
+      "PackagePath": "staticwebassets\\member\\src\\js\\core\\app-lite.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\src\\js\\core\\app-menu-lite.js",
+      "PackagePath": "staticwebassets\\member\\src\\js\\core\\app-menu-lite.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\src\\js\\core\\libraries\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\member\\src\\js\\core\\libraries\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\src\\js\\core\\libraries\\jquery.min.js",
+      "PackagePath": "staticwebassets\\member\\src\\js\\core\\libraries\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\src\\js\\scripts\\customizer-lite.js",
+      "PackagePath": "staticwebassets\\member\\src\\js\\scripts\\customizer-lite.js"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\tables.html",
+      "PackagePath": "staticwebassets\\member\\tables.html"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\member\\typography.html",
+      "PackagePath": "staticwebassets\\member\\typography.html"
+    },
+    {
       "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\register\\css\\style.css",
       "PackagePath": "staticwebassets\\register\\css\\style.css"
     },
@@ -3121,12 +3289,28 @@
       "PackagePath": "staticwebassets\\userImages\\0aee00d9-357c-48ca-979e-77f507820401.jpg"
     },
     {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\userImages\\184f19de-14a0-43a8-bf00-c4a7278173cc.JPG",
+      "PackagePath": "staticwebassets\\userImages\\184f19de-14a0-43a8-bf00-c4a7278173cc.JPG"
+    },
+    {
       "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\userImages\\46e6ad0b-8be3-40dc-9e06-8ff6d600c1c9.jpeg",
       "PackagePath": "staticwebassets\\userImages\\46e6ad0b-8be3-40dc-9e06-8ff6d600c1c9.jpeg"
     },
     {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\userImages\\485a7e5a-caf4-4832-aac4-709d0d5d4b98.JPG",
+      "PackagePath": "staticwebassets\\userImages\\485a7e5a-caf4-4832-aac4-709d0d5d4b98.JPG"
+    },
+    {
       "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\userImages\\518f0dad-d1cc-4315-9317-0b95fe2742da.jpeg",
       "PackagePath": "staticwebassets\\userImages\\518f0dad-d1cc-4315-9317-0b95fe2742da.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\userImages\\RSM_6746.JPG",
+      "PackagePath": "staticwebassets\\userImages\\RSM_6746.JPG"
+    },
+    {
+      "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\userImages\\WhatsApp Image 2023-06-18 at 15.55.17 (2).jpeg",
+      "PackagePath": "staticwebassets\\userImages\\WhatsApp Image 2023-06-18 at 15.55.17 (2).jpeg"
     },
     {
       "Id": "C:\\Users\\Onur\\Desktop\\Windows Form Projelerim\\TraversalApp.MVC\\TraversalApp.MVC\\wwwroot\\userImages\\ae33db0b-bb05-4460-8ca6-b234e98da5ad.jpg",

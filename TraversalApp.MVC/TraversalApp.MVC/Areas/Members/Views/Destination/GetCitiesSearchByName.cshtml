@@ -1,0 +1,75 @@
+﻿@using TraversalApp.Core.Entites
+@model List<Destination>
+
+@{
+    ViewData["Title"] = "GetCitiesSearchByName";
+    Layout = "~/Views/Shared/_UserLayout.cshtml";
+}
+
+<h1>Aktif Tur Rotalarımız</h1>
+
+<tr>
+    <td colspan="5">
+        <form asp-action="GetCitiesSearchByName" method="get" asp-area="Members">
+            <div>
+                <p>
+                    <b>Lütfen Aranacak Şehri Giriniz:</b><br />
+                    <small>Büyük/Küçük Harf Duyarlıdır !</small>
+                    <input type="text" name="searchString" class="form-control" value="@ViewData["CurrentFilter"]" />
+                    <br />
+                    <input type="submit" value="Şehir Ara" class="btn btn-outline-dark" />
+                </p>
+            </div>
+        </form>
+    </td>
+</tr>
+
+<div class="card-body px-0 pt-0 pb-2">
+    <div class="table-responsive p-0">
+        <table class="table align-items-center mb-0">
+            <thead>
+                <tr>
+                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Süre & Şehir</th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Açıklama & Kapasite</th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Durumu</th>
+                    <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Fiyat ($)</th>
+                    <th class="text-secondary opacity-7"></th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            <div class="d-flex px-2 py-1">
+                                <div>
+                                    <img src="@item.Image" class="avatar avatar-sm me-3" alt="user1">
+                                </div>
+                                <div class="d-flex flex-column justify-content-center">
+                                    <h6 class="mb-0 text-sm">@item.City</h6>
+                                    <p class="text-xs text-secondary mb-0">@item.DayNight</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <p class="text-xs font-weight-bold mb-0">@item.Description</p>
+                            <p class="text-xs text-secondary mb-0">Kontenjan @item.Capacity</p>
+                        </td>
+                        <td class="align-middle text-center text-sm">
+                            <span class="badge badge-sm bg-gradient-success">@item.Status</span>
+                        </td>
+                        <td class="align-middle text-center">
+                            <span class="text-secondary text-xs font-weight-bold">@item.Price</span>
+                        </td>
+                        <td class="align-middle">
+                            <a href="/Destination/DestinationDetails/@item.Id" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit User">
+                                Detaylar
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+﻿@model List<AppUser>
+
+@{
+    ViewData["Title"] = "UserList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Kullanıcı Listesi</h1>
+
+<table class="table table-borderless">
+    <tr>
+        <th>#</th>
+        <th>Ad</th>
+        <th>Soyad</th>
+        <th>Kullanıcı Adı</th>
+        <th>Rol</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.Surname</td>
+            <td>@item.UserName</td>
+            <td><a href="/Adminss/Role/AssignRole/@item.Id" class="btn btn-warning">Rol Ata</a></td>
+        </tr>
+    }
+    </table>

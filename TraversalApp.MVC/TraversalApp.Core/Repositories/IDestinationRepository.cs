@@ -10,5 +10,6 @@ namespace TraversalApp.Core.Repositories
     public interface IDestinationRepository : IGenericRepository<Destination>
     {
         Destination GetDestinationsWithGuide(int id);
+        Task<List<Destination>> GetLast4Destinations();
     }
 }

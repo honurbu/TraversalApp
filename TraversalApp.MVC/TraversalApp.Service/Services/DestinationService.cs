@@ -23,5 +23,10 @@ namespace TraversalApp.Service.Services
         {
             return _destinationRepository.GetDestinationsWithGuide(id); 
         }
+
+        public async Task<List<Destination>> GetLast4Destinations()
+        {
+            return await _destinationRepository.GetLast4Destinations();
+        }
     }
 }

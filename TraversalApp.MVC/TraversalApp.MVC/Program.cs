@@ -73,7 +73,7 @@ builder.Services.AddDbContext<AppDbContext>(x =>
 });
 
 
-builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<AppDbContext>().AddErrorDescriber<CustomIdentityValidator>().AddEntityFrameworkStores<AppDbContext>();
+builder.Services.AddIdentity<AppUser, AppRole>().AddTokenProvider<DataProtectorTokenProvider<AppUser>>(TokenOptions.DefaultProvider).AddEntityFrameworkStores<AppDbContext>().AddErrorDescriber<CustomIdentityValidator>().AddEntityFrameworkStores<AppDbContext>();
 
 
 
@@ -89,6 +89,12 @@ builder.Services.AddMvc(config =>
     });
 
 builder.Services.AddMvc();
+
+builder.Services.ConfigureApplicationCookie(opt =>
+{
+    opt.LoginPath = "/Login/SignIn";
+});
+
 var app = builder.Build();
 
 var loggerFactory = app.Services.GetRequiredService<ILoggerFactory>();
